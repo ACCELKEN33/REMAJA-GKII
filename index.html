@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REMAJA GKII - Gereja Kristen Injili Indonesia</title>
+    <title>REMAJA GKII - TUREM & KOREM | Gereja Kristen Injili Indonesia</title>
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -38,7 +38,7 @@
                 <!-- Logo & Nama Gereja -->
                 <a href="#beranda" class="flex items-center gap-3 group">
                     
-                    <!-- -------Logo------- (Ganti logo-remaja.png dengan nama file logomu) -->
+                    <!-- -------Logo------- (Ganti logo REMAJA.png dengan nama file logomu) -->
                     <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-500 flex items-center justify-center overflow-hidden shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform">
                         <img src="logo REMAJA.png" alt="Logo Remaja GKII" class="w-full h-full object-contain p-1.5">
                     </div>
@@ -49,15 +49,15 @@
                             REMAJA <span class="text-amber-400">GKII</span>
                         </span>
                         <span class="text-[11px] text-slate-400 tracking-wider uppercase font-medium mt-1 block">
-                            Gereja Kristen Injili Indonesia
+                            TUREM & KOREM • Gereja Kristen Injili Indonesia
                         </span>
                     </div>
                 </a>
 
                 <!-- Navigasi Desktop -->
                 <nav class="hidden md:flex items-center gap-1 lg:gap-2">
-                    <a href="#beranda" class="px-3.5 py-2 rounded-xl text-sm font-medium text-slate-200 hover:text-amber-400 hover:bg-slate-800/70 transition">Beranda</a>
-                    <a href="#tema-ibadah" class="px-3.5 py-2 rounded-xl text-sm font-medium text-slate-200 hover:text-amber-400 hover:bg-slate-800/70 transition">Tema Ibadah</a>
+                    <a href="#beranda" class="px-3.5 py-2 rounded-xl text-sm font-medium text-slate-200 hover:text-amber-400 hover:bg-slate-800/70 transition">Minggu Ini</a>
+                    <a href="#tema-minggu-depan" class="px-3.5 py-2 rounded-xl text-sm font-medium text-slate-200 hover:text-amber-400 hover:bg-slate-800/70 transition">Minggu Depan</a>
                     <a href="#warta-event" class="px-3.5 py-2 rounded-xl text-sm font-medium text-slate-200 hover:text-amber-400 hover:bg-slate-800/70 transition">Warta & Event</a>
                     <a href="#dokumentasi" class="px-3.5 py-2 rounded-xl text-sm font-medium text-slate-200 hover:text-amber-400 hover:bg-slate-800/70 transition">Dokumentasi</a>
                     <button onclick="openAdminModal()" class="ml-3 px-4 py-2.5 rounded-xl text-sm font-bold bg-amber-400 hover:bg-amber-300 text-slate-950 shadow-sm flex items-center gap-2 transition active:scale-95">
@@ -81,170 +81,64 @@
 
         <!-- Dropdown Menu Mobile -->
         <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800 px-4 pt-2 pb-5 space-y-1">
-            <a href="#beranda" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-xl text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-amber-400">Beranda</a>
-            <a href="#tema-ibadah" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-xl text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-amber-400">Tema Ibadah</a>
+            <a href="#beranda" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-xl text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-amber-400">Minggu Ini</a>
+            <a href="#tema-minggu-depan" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-xl text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-amber-400">Tema Minggu Depan</a>
             <a href="#warta-event" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-xl text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-amber-400">Warta & Event</a>
             <a href="#dokumentasi" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-xl text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-amber-400">Dokumentasi Ibadah</a>
         </div>
     </header>
 
-    <!-- ==================== 2. HERO & TEMA MINGGU INI ==================== -->
-    <section id="beranda" class="relative overflow-hidden bg-slate-950 text-white py-14 sm:py-20 lg:py-24">
-        <!-- Aksen Latar Halus -->
+    <!-- ==================== 2. HERO & TEMA MINGGU INI (TUREM / KOREM / GABUNG) ==================== -->
+    <section id="beranda" class="relative overflow-hidden bg-slate-950 text-white py-12 sm:py-16 lg:py-20">
         <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-indigo-900/35 via-slate-950 to-slate-950 pointer-events-none"></div>
 
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-                
-                <!-- Kolom Kiri: Informasi Tema Minggu Ini -->
-                <div class="lg:col-span-7 space-y-6">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-400/10 border border-amber-400/30 text-amber-300 text-xs font-bold tracking-wider uppercase">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/10 pb-6">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-400/10 border border-amber-400/30 text-amber-300 text-xs font-bold tracking-wider uppercase mb-2">
                         <span class="w-2 h-2 rounded-full bg-amber-400"></span>
                         Tema Ibadah Minggu Ini
                     </div>
-
-                    <h1 id="hero-theme-title" class="font-display font-extrabold text-3xl sm:text-5xl lg:text-[3.25rem] leading-[1.15] text-white tracking-tight">
-                        Memuat Tema...
+                    <h1 id="cur-section-heading" class="font-display font-extrabold text-2xl sm:text-4xl text-white tracking-tight">
+                        TUREM & KOREM
                     </h1>
-
-                    <div class="p-5 rounded-2xl bg-white/[0.04] border border-white/10">
-                        <div class="flex items-start gap-3.5">
-                            <div class="w-10 h-10 rounded-xl bg-amber-400/15 text-amber-400 flex items-center justify-center shrink-0 mt-0.5">
-                                <i class="fa-solid fa-book-bible text-lg"></i>
-                            </div>
-                            <div>
-                                <p id="hero-theme-verse" class="font-display font-bold text-amber-300 text-base sm:text-lg"></p>
-                                <p id="hero-theme-desc" class="text-slate-300 text-sm sm:text-base mt-1.5 leading-relaxed"></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Tombol Link Dokumentasi Ibadah Minggu Ini -->
-                    <div class="flex flex-col sm:flex-row gap-3.5 pt-2">
-                        <a id="hero-doc-link" href="#dokumentasi" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-2xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-sm sm:text-base shadow-lg shadow-amber-500/20 transition">
-                            <i class="fa-solid fa-photo-film text-base"></i>
-                            <span>Link Dokumentasi Ibadah Minggu Ini</span>
-                            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
-                        </a>
-                        <a href="#dokumentasi" class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl bg-white/[0.06] hover:bg-white/[0.12] border border-white/10 text-white font-semibold text-sm sm:text-base transition">
-                            <i class="fa-solid fa-folder-open text-slate-300"></i>
-                            <span>Arsip Minggu Sebelumnya</span>
-                        </a>
-                    </div>
                 </div>
 
-                <!-- Kolom Kanan: Poster Tema & Jadwal Pelaksanaan -->
-                <div class="lg:col-span-5 space-y-5">
-                    <!-- Poster Tema Minggu Ini (dengan fallback jika kosong) -->
-                    <div id="hero-poster-container" class="rounded-3xl overflow-hidden border border-white/10 bg-slate-900 shadow-2xl">
-                        <img id="hero-poster-img" src="" alt="Poster Tema Minggu Ini" class="hidden w-full max-h-80 object-cover">
-                        <div id="hero-poster-fallback" class="p-6 bg-gradient-to-br from-indigo-900/60 via-slate-900 to-slate-900 flex items-center justify-between border-b border-white/10">
-                            <div>
-                                <p class="text-xs font-bold uppercase tracking-widest text-amber-400">Persekutuan Remaja</p>
-                                <p class="font-display font-bold text-lg text-white mt-0.5">REMAJA GKII</p>
-                            </div>
-                            <div class="w-11 h-11 rounded-2xl bg-white/10 flex items-center justify-center text-amber-300">
-                                <i class="fa-solid fa-church text-lg"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Kartu Detail Jadwal -->
-                    <div class="rounded-3xl bg-slate-900/90 border border-slate-800 p-6 sm:p-7 shadow-xl space-y-4">
-                        <div class="flex items-center justify-between border-b border-slate-800 pb-4">
-                            <h2 class="font-display font-bold text-lg text-white flex items-center gap-2">
-                                <i class="fa-regular fa-calendar-check text-amber-400"></i>
-                                Detail Ibadah
-                            </h2>
-                            <span class="px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 text-xs font-semibold">Minggu Ini</span>
-                        </div>
-
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 text-sm">
-                            <div class="p-3.5 rounded-2xl bg-slate-800/60 border border-slate-700/50">
-                                <span class="text-[11px] text-slate-400 uppercase tracking-wider font-semibold block">Hari & Tanggal</span>
-                                <p id="hero-date" class="text-white font-semibold mt-1"></p>
-                            </div>
-                            <div class="p-3.5 rounded-2xl bg-slate-800/60 border border-slate-700/50">
-                                <span class="text-[11px] text-slate-400 uppercase tracking-wider font-semibold block">Waktu</span>
-                                <p id="hero-time" class="text-white font-semibold mt-1"></p>
-                            </div>
-                            <div class="p-3.5 rounded-2xl bg-slate-800/60 border border-slate-700/50">
-                                <span class="text-[11px] text-slate-400 uppercase tracking-wider font-semibold block">Pembicara</span>
-                                <p id="hero-speaker" class="text-white font-semibold mt-1"></p>
-                            </div>
-                            <div class="p-3.5 rounded-2xl bg-slate-800/60 border border-slate-700/50">
-                                <span class="text-[11px] text-slate-400 uppercase tracking-wider font-semibold block">Lokasi</span>
-                                <p id="hero-location" class="text-white font-semibold mt-1"></p>
-                            </div>
-                        </div>
-
-                        <div class="pt-2 flex items-center justify-between text-xs text-slate-400">
-                            <span class="flex items-center gap-2">
-                                <span id="public-sync-dot" class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
-                                <span id="public-sync-text">Menghubungkan Firebase...</span>
-                            </span>
-                            <button onclick="copyShareText()" class="text-amber-400 hover:text-amber-300 font-semibold flex items-center gap-1.5 transition">
-                                <i class="fa-solid fa-share-nodes"></i> Bagikan Info
-                            </button>
-                        </div>
-                    </div>
+                <div class="flex items-center justify-between sm:justify-end gap-4 text-xs text-slate-400">
+                    <span class="flex items-center gap-2">
+                        <span id="public-sync-dot" class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                        <span id="public-sync-text">Menghubungkan Firebase...</span>
+                    </span>
+                    <button onclick="copyShareText()" class="px-3.5 py-2 rounded-xl bg-white/[0.06] hover:bg-white/[0.12] border border-white/10 text-amber-400 hover:text-amber-300 font-semibold flex items-center gap-1.5 transition">
+                        <i class="fa-solid fa-share-nodes"></i> Bagikan Info
+                    </button>
                 </div>
+            </div>
 
+            <div id="current-themes-container">
+                <!-- Dirender oleh JS -->
             </div>
         </div>
     </section>
 
-    <!-- ==================== 3. TEMA MINGGU DEPAN ==================== -->
-    <section id="tema-ibadah" class="py-12 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="rounded-3xl bg-white border border-slate-200/90 p-6 sm:p-10 shadow-sm">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                <div class="lg:col-span-8 space-y-4">
-                    <div class="flex flex-wrap items-center gap-2">
-                        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-indigo-50 text-indigo-700 text-xs font-bold uppercase tracking-wider">
-                            <i class="fa-solid fa-forward"></i> Persiapan Minggu Depan
-                        </div>
-                        <span id="next-coming-soon-badge" class="hidden inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-wider">
-                            <i class="fa-regular fa-hourglass-half"></i> Coming Soon
-                        </span>
-                    </div>
-
-                    <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-slate-900">
-                        Tema Minggu Depan: <span id="next-theme-title" class="text-indigo-700"></span>
-                    </h2>
-                    <p id="next-theme-desc" class="text-slate-600 text-sm sm:text-base leading-relaxed"></p>
-                    
-                    <div id="next-theme-meta" class="flex flex-wrap items-center gap-3 pt-2 text-xs sm:text-sm">
-                        <span id="next-verse-pill" class="inline-flex items-center gap-2 bg-slate-100 text-slate-800 px-3.5 py-2 rounded-xl font-semibold">
-                            <i class="fa-solid fa-book-open text-indigo-600"></i>
-                            <span id="next-theme-verse"></span>
-                        </span>
-                        <span id="next-date-pill" class="inline-flex items-center gap-2 bg-slate-100 text-slate-800 px-3.5 py-2 rounded-xl font-medium">
-                            <i class="fa-regular fa-calendar text-indigo-600"></i>
-                            <span id="next-theme-date"></span>
-                        </span>
-                        <span id="next-speaker-pill" class="inline-flex items-center gap-2 bg-slate-100 text-slate-800 px-3.5 py-2 rounded-xl font-medium">
-                            <i class="fa-solid fa-microphone text-indigo-600"></i>
-                            <span id="next-theme-speaker"></span>
-                        </span>
-                    </div>
+    <!-- ==================== 3. TEMA MINGGU DEPAN (TUREM / KOREM / GABUNG + COMING SOON) ==================== -->
+    <section id="tema-minggu-depan" class="py-12 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 border-b border-slate-200 pb-4">
+            <div>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-xs font-bold uppercase tracking-wider mb-1.5">
+                    <i class="fa-solid fa-forward"></i> Persiapan Minggu Depan
                 </div>
-
-                <!-- Poster Minggu Depan atau Kartu Fallback -->
-                <div class="lg:col-span-4">
-                    <div id="next-poster-box" class="hidden rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
-                        <img id="next-poster-img" src="" alt="Poster Tema Minggu Depan" class="w-full h-52 object-cover">
-                    </div>
-                    <div id="next-poster-fallback" class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 text-center">
-                        <div class="w-12 h-12 rounded-2xl bg-indigo-100 text-indigo-700 flex items-center justify-center mx-auto mb-3 text-xl">
-                            <i id="next-fallback-icon" class="fa-solid fa-hands-praying"></i>
-                        </div>
-                        <p id="next-fallback-title" class="font-display font-bold text-slate-900 text-base">Mari Siapkan Hati</p>
-                        <p id="next-fallback-desc" class="text-xs text-slate-500 mt-1.5 leading-relaxed">
-                            Baca perikop Alkitab minggu depan terlebih dahulu dan ajak teman remaja lainnya hadir bersama.
-                        </p>
-                    </div>
-                </div>
+                <h2 id="next-section-heading" class="font-display font-extrabold text-2xl sm:text-3xl text-slate-900">
+                    Tema Minggu Depan
+                </h2>
             </div>
+            <p class="text-xs sm:text-sm text-slate-500">
+                Siapkan hati & ajak teman remaja untuk ibadah minggu depan.
+            </p>
+        </div>
+
+        <div id="next-themes-container">
+            <!-- Dirender oleh JS -->
         </div>
     </section>
 
@@ -299,7 +193,7 @@
                     </span>
                     <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-slate-900">Arsip Dokumentasi Mingguan</h2>
                     <p class="text-slate-600 text-sm sm:text-base mt-1.5 max-w-2xl">
-                        Klik tautan di bawah untuk melihat foto, video rekap, maupun ringkasan ibadah setiap minggunya.
+                        Klik tautan di bawah untuk melihat foto, video rekap, maupun ringkasan ibadah TUREM, KOREM, atau Gabungan.
                     </p>
                 </div>
 
@@ -307,7 +201,7 @@
                 <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
                     <div class="relative flex-1 sm:w-64">
                         <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
-                        <input type="text" id="doc-search" oninput="renderDocs()" placeholder="Cari tema atau tanggal..." class="w-full pl-10 pr-4 py-2.5 rounded-xl bg-white border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <input type="text" id="doc-search" oninput="renderDocs()" placeholder="Cari tema, TUREM/KOREM..." class="w-full pl-10 pr-4 py-2.5 rounded-xl bg-white border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
                     </div>
                     <select id="doc-filter" onchange="renderDocs()" class="px-4 py-2.5 rounded-xl bg-white border border-slate-300 text-sm font-medium text-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
                         <option value="ALL">Semua Platform</option>
@@ -330,20 +224,20 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="flex items-center gap-3">
                 
-                <!-- -------Logo------- (Ganti logo-remaja.png dengan nama file logomu) -->
+                <!-- -------Logo------- (Ganti logo REMAJA.png dengan nama file logomu) -->
                 <div class="w-10 h-10 rounded-xl bg-amber-400 flex items-center justify-center overflow-hidden">
                     <img src="logo REMAJA.png" alt="Logo Remaja GKII" class="w-full h-full object-contain p-1">
                 </div>
                 <!-- -------Akhir Logo------- -->
 
                 <div>
-                    <p class="font-display font-bold text-white text-base">REMAJA GKII</p>
-                    <p class="text-xs text-slate-500">Gereja Kristen Injili Indonesia • Komisi Remaja</p>
+                    <p class="font-display font-bold text-white text-base">REMAJA GKII • TUREM & KOREM</p>
+                    <p class="text-xs text-slate-500">Gereja Kristen Injili Indonesia • Tunas Remaja & Komisi Remaja</p>
                 </div>
             </div>
             <div class="flex flex-wrap justify-center gap-5 text-sm">
-                <a href="#beranda" class="hover:text-amber-400 transition">Beranda</a>
-                <a href="#tema-ibadah" class="hover:text-amber-400 transition">Tema</a>
+                <a href="#beranda" class="hover:text-amber-400 transition">Minggu Ini</a>
+                <a href="#tema-minggu-depan" class="hover:text-amber-400 transition">Minggu Depan</a>
                 <a href="#warta-event" class="hover:text-amber-400 transition">Warta & Event</a>
                 <a href="#dokumentasi" class="hover:text-amber-400 transition">Dokumentasi</a>
             </div>
@@ -390,7 +284,7 @@
                 <i class="fa-solid fa-shield-halved"></i>
             </div>
             <h3 class="font-display font-extrabold text-xl text-slate-900">Verifikasi Pengurus</h3>
-            <p class="text-sm text-slate-600 mt-1">Masukkan token khusus admin untuk mengelola konten dan mengunggah poster ibadah.</p>
+            <p class="text-sm text-slate-600 mt-1">Masukkan token khusus admin untuk mengelola konten TUREM, KOREM, dan poster ibadah.</p>
             
             <form onsubmit="verifyAdminToken(event)" class="mt-5 space-y-4">
                 <div>
@@ -423,7 +317,6 @@
                     </div>
                     <div>
                         <h3 class="font-display font-bold text-lg">Panel Pengurus Remaja GKII</h3>
-                        <!-- Indikator Status Koneksi Firebase -->
                         <div class="flex items-center gap-2 mt-0.5">
                             <span id="admin-fb-dot" class="w-2 h-2 rounded-full bg-emerald-400"></span>
                             <span id="admin-fb-status" class="text-xs text-slate-300 font-medium">Terhubung ke Firebase Cloud</span>
@@ -465,51 +358,183 @@
                 
                 <!-- TAB 1: TEMA MINGGU INI -->
                 <div id="tab-cur-theme" class="admin-tab-content">
-                    <form onsubmit="saveCurrentTheme(event)" class="space-y-4">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <form onsubmit="saveCurrentThemes(event)" class="space-y-6">
+                        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                             <div>
-                                <label class="block text-xs font-bold text-slate-700 mb-1">Judul Tema Minggu Ini</label>
-                                <input type="text" id="input-cur-title" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm">
+                                <p class="text-xs font-bold uppercase tracking-wider text-indigo-700">Mode Tampilan Tema Minggu Ini</p>
+                                <p class="text-xs text-slate-600 mt-0.5">Pilih <strong>2 Tema Terpisah</strong> (TUREM & KOREM beda tema) atau <strong>1 Tema Gabung</strong> (khusus ibadah bersama).</p>
                             </div>
-                            <div>
-                                <label class="block text-xs font-bold text-slate-700 mb-1">Ayat Pokok Alkitab</label>
-                                <input type="text" id="input-cur-verse" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm">
+                            <select id="input-cur-mode" onchange="toggleAdminThemeModeUI('cur')" class="px-4 py-2.5 rounded-xl border border-slate-300 text-sm font-bold text-slate-900 bg-white">
+                                <option value="split">2 Tema Terpisah (TUREM & KOREM)</option>
+                                <option value="combined">1 Tema Gabung (TUREM & KOREM)</option>
+                            </select>
+                        </div>
+
+                        <!-- Blok Form 1 Tema Gabung (Minggu Ini) -->
+                        <div id="admin-cur-combined-form" class="hidden space-y-4 p-4 rounded-2xl bg-amber-50/50 border border-amber-200/90">
+                            <div class="flex items-center justify-between border-b border-amber-200/80 pb-2">
+                                <h4 class="font-display font-bold text-base text-slate-900">
+                                    <i class="fa-solid fa-people-group text-amber-600 mr-1.5"></i> Form 1 Tema Gabung Minggu Ini
+                                </h4>
+                                <span class="px-2.5 py-0.5 rounded-full bg-amber-200 text-amber-900 text-[11px] font-bold">GABUNG</span>
                             </div>
-                            <div>
-                                <label class="block text-xs font-bold text-slate-700 mb-1">Hari & Tanggal</label>
-                                <input type="text" id="input-cur-date" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm">
-                            </div>
-                            <div>
-                                <label class="block text-xs font-bold text-slate-700 mb-1">Waktu Ibadah</label>
-                                <input type="text" id="input-cur-time" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm">
-                            </div>
-                            <div>
-                                <label class="block text-xs font-bold text-slate-700 mb-1">Pembicara</label>
-                                <input type="text" id="input-cur-speaker" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm">
-                            </div>
-                            <div>
-                                <label class="block text-xs font-bold text-slate-700 mb-1">Lokasi Ibadah</label>
-                                <input type="text" id="input-cur-loc" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm">
-                            </div>
-                            <div class="sm:col-span-2">
-                                <label class="block text-xs font-bold text-slate-700 mb-1">Link Dokumentasi Ibadah Minggu Ini (GDrive / YouTube / IG)</label>
-                                <input type="url" id="input-cur-doclink" required placeholder="https://..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm">
-                            </div>
-                            <div class="sm:col-span-2 p-4 rounded-2xl bg-slate-50 border border-slate-200">
-                                <label class="block text-xs font-bold text-slate-700 mb-1.5">Unggah Poster Tema Minggu Ini (Otomatis dikompresi)</label>
-                                <div class="flex flex-wrap items-center gap-3">
-                                    <input type="file" id="input-cur-poster-file" accept="image/*" onchange="handlePosterUpload(event, 'cur')" class="text-xs text-slate-600 file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-indigo-600 file:text-white hover:file:bg-indigo-700 cursor-pointer">
-                                    <button type="button" onclick="clearPoster('cur')" id="btn-clear-cur-poster" class="hidden px-3 py-1.5 rounded-lg bg-rose-100 text-rose-700 text-xs font-semibold">Hapus Poster</button>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 mb-1">Judul Tema Gabungan</label>
+                                    <input type="text" id="input-cur-comb-title" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
                                 </div>
-                                <div id="preview-cur-poster-box" class="hidden mt-3">
-                                    <img id="preview-cur-poster-img" src="" alt="Preview Poster" class="h-36 rounded-xl border border-slate-300 object-cover">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 mb-1">Ayat Pokok Alkitab</label>
+                                    <input type="text" id="input-cur-comb-verse" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
                                 </div>
-                            </div>
-                            <div class="sm:col-span-2">
-                                <label class="block text-xs font-bold text-slate-700 mb-1">Deskripsi Singkat Tema</label>
-                                <textarea id="input-cur-desc" rows="2" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm"></textarea>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 mb-1">Hari & Tanggal</label>
+                                    <input type="text" id="input-cur-comb-date" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 mb-1">Waktu Ibadah</label>
+                                    <input type="text" id="input-cur-comb-time" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 mb-1">Pembicara</label>
+                                    <input type="text" id="input-cur-comb-speaker" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 mb-1">Lokasi Ibadah</label>
+                                    <input type="text" id="input-cur-comb-loc" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                </div>
+                                <div class="sm:col-span-2">
+                                    <label class="block text-xs font-bold text-slate-700 mb-1">Link Dokumentasi Ibadah Gabungan</label>
+                                    <input type="url" id="input-cur-comb-doclink" placeholder="https://..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                </div>
+                                <div class="sm:col-span-2 p-3.5 rounded-xl bg-white border border-slate-200">
+                                    <label class="block text-xs font-bold text-slate-700 mb-1.5">Unggah Poster Tema Gabungan</label>
+                                    <div class="flex flex-wrap items-center gap-3">
+                                        <input type="file" id="input-cur-comb-poster-file" accept="image/*" onchange="handlePosterUpload(event, 'curComb')" class="text-xs text-slate-600 file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-amber-400 file:text-slate-950 hover:file:bg-amber-300 cursor-pointer">
+                                        <button type="button" onclick="clearPoster('curComb')" id="btn-clear-curComb-poster" class="hidden px-3 py-1.5 rounded-lg bg-rose-100 text-rose-700 text-xs font-semibold">Hapus Poster</button>
+                                    </div>
+                                    <div id="preview-curComb-poster-box" class="hidden mt-3">
+                                        <img id="preview-curComb-poster-img" src="" alt="Preview Poster Gabungan" class="h-32 rounded-xl border border-slate-300 object-cover">
+                                    </div>
+                                </div>
+                                <div class="sm:col-span-2">
+                                    <label class="block text-xs font-bold text-slate-700 mb-1">Deskripsi Singkat Tema</label>
+                                    <textarea id="input-cur-comb-desc" rows="2" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white"></textarea>
+                                </div>
                             </div>
                         </div>
+
+                        <!-- Blok Form 2 Tema Terpisah Minggu Ini: TUREM & KOREM -->
+                        <div id="admin-cur-split-form" class="space-y-6">
+                            <!-- SUB-BLOK TUREM -->
+                            <div class="space-y-4 p-4 rounded-2xl bg-emerald-50/40 border border-emerald-200/80">
+                                <div class="flex items-center justify-between border-b border-emerald-200/70 pb-2">
+                                    <h4 class="font-display font-bold text-base text-slate-900">
+                                        <span class="px-2.5 py-0.5 rounded-lg bg-emerald-600 text-white text-xs mr-2">TUREM</span>
+                                        Tema Tunas Remaja Minggu Ini
+                                    </h4>
+                                </div>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Judul Tema TUREM</label>
+                                        <input type="text" id="input-cur-turem-title" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Ayat Pokok TUREM</label>
+                                        <input type="text" id="input-cur-turem-verse" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Hari & Tanggal TUREM</label>
+                                        <input type="text" id="input-cur-turem-date" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Waktu Ibadah TUREM</label>
+                                        <input type="text" id="input-cur-turem-time" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Pembicara TUREM</label>
+                                        <input type="text" id="input-cur-turem-speaker" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Lokasi TUREM</label>
+                                        <input type="text" id="input-cur-turem-loc" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                    </div>
+                                    <div class="sm:col-span-2">
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Link Dokumentasi TUREM</label>
+                                        <input type="url" id="input-cur-turem-doclink" placeholder="https://..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                    </div>
+                                    <div class="sm:col-span-2 p-3.5 rounded-xl bg-white border border-slate-200">
+                                        <label class="block text-xs font-bold text-slate-700 mb-1.5">Unggah Poster TUREM</label>
+                                        <div class="flex flex-wrap items-center gap-3">
+                                            <input type="file" id="input-cur-turem-poster-file" accept="image/*" onchange="handlePosterUpload(event, 'curTurem')" class="text-xs text-slate-600 file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-emerald-600 file:text-white hover:file:bg-emerald-700 cursor-pointer">
+                                            <button type="button" onclick="clearPoster('curTurem')" id="btn-clear-curTurem-poster" class="hidden px-3 py-1.5 rounded-lg bg-rose-100 text-rose-700 text-xs font-semibold">Hapus Poster</button>
+                                        </div>
+                                        <div id="preview-curTurem-poster-box" class="hidden mt-3">
+                                            <img id="preview-curTurem-poster-img" src="" alt="Preview Poster TUREM" class="h-32 rounded-xl border border-slate-300 object-cover">
+                                        </div>
+                                    </div>
+                                    <div class="sm:col-span-2">
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Deskripsi Singkat TUREM</label>
+                                        <textarea id="input-cur-turem-desc" rows="2" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SUB-BLOK KOREM -->
+                            <div class="space-y-4 p-4 rounded-2xl bg-indigo-50/40 border border-indigo-200/80">
+                                <div class="flex items-center justify-between border-b border-indigo-200/70 pb-2">
+                                    <h4 class="font-display font-bold text-base text-slate-900">
+                                        <span class="px-2.5 py-0.5 rounded-lg bg-indigo-600 text-white text-xs mr-2">KOREM</span>
+                                        Tema Komisi Remaja Minggu Ini
+                                    </h4>
+                                </div>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Judul Tema KOREM</label>
+                                        <input type="text" id="input-cur-korem-title" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Ayat Pokok KOREM</label>
+                                        <input type="text" id="input-cur-korem-verse" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Hari & Tanggal KOREM</label>
+                                        <input type="text" id="input-cur-korem-date" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Waktu Ibadah KOREM</label>
+                                        <input type="text" id="input-cur-korem-time" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Pembicara KOREM</label>
+                                        <input type="text" id="input-cur-korem-speaker" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Lokasi KOREM</label>
+                                        <input type="text" id="input-cur-korem-loc" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                    </div>
+                                    <div class="sm:col-span-2">
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Link Dokumentasi KOREM</label>
+                                        <input type="url" id="input-cur-korem-doclink" placeholder="https://..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                    </div>
+                                    <div class="sm:col-span-2 p-3.5 rounded-xl bg-white border border-slate-200">
+                                        <label class="block text-xs font-bold text-slate-700 mb-1.5">Unggah Poster KOREM</label>
+                                        <div class="flex flex-wrap items-center gap-3">
+                                            <input type="file" id="input-cur-korem-poster-file" accept="image/*" onchange="handlePosterUpload(event, 'curKorem')" class="text-xs text-slate-600 file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-indigo-600 file:text-white hover:file:bg-indigo-700 cursor-pointer">
+                                            <button type="button" onclick="clearPoster('curKorem')" id="btn-clear-curKorem-poster" class="hidden px-3 py-1.5 rounded-lg bg-rose-100 text-rose-700 text-xs font-semibold">Hapus Poster</button>
+                                        </div>
+                                        <div id="preview-curKorem-poster-box" class="hidden mt-3">
+                                            <img id="preview-curKorem-poster-img" src="" alt="Preview Poster KOREM" class="h-32 rounded-xl border border-slate-300 object-cover">
+                                        </div>
+                                    </div>
+                                    <div class="sm:col-span-2">
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Deskripsi Singkat KOREM</label>
+                                        <textarea id="input-cur-korem-desc" rows="2" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="flex items-center justify-between pt-2">
                             <button type="button" onclick="resetDefaultData()" class="px-4 py-2.5 rounded-xl text-xs font-semibold text-rose-600 hover:bg-rose-50 border border-rose-200 transition">
                                 <i class="fa-solid fa-rotate-left mr-1"></i> Reset Data Default
@@ -521,51 +546,181 @@
                     </form>
                 </div>
 
-                <!-- TAB 2: TEMA MINGGU DEPAN -->
+                <!-- TAB 2: TEMA MINGGU DEPAN (TUREM / KOREM / GABUNG + COMING SOON) -->
                 <div id="tab-next-theme" class="admin-tab-content hidden">
-                    <form onsubmit="saveNextTheme(event)" class="space-y-4">
-                        <div class="p-3.5 rounded-2xl bg-amber-50 border border-amber-200/80 text-xs text-amber-900 flex items-start justify-between gap-3">
-                            <div class="flex items-start gap-2.5">
-                                <i class="fa-solid fa-circle-info text-amber-600 mt-0.5"></i>
-                                <span>Kosongkan kolom <strong>Judul Tema</strong> jika tema minggu depan belum tersedia—website otomatis menampilkan <strong>"Coming Soon"</strong>.</span>
+                    <form onsubmit="saveNextThemes(event)" class="space-y-6">
+                        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                            <div>
+                                <p class="text-xs font-bold uppercase tracking-wider text-indigo-700">Mode Tampilan Tema Minggu Depan</p>
+                                <p class="text-xs text-slate-600 mt-0.5">Kosongkan judul bila tema belum ada—otomatis tampil <strong>Coming Soon</strong>.</p>
                             </div>
-                            <button type="button" onclick="setNextThemeComingSoon()" class="px-3 py-1.5 rounded-lg bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold shrink-0 transition">
-                                Set Coming Soon
-                            </button>
+                            <select id="input-next-mode" onchange="toggleAdminThemeModeUI('next')" class="px-4 py-2.5 rounded-xl border border-slate-300 text-sm font-bold text-slate-900 bg-white">
+                                <option value="split">2 Tema Terpisah (TUREM & KOREM)</option>
+                                <option value="combined">1 Tema Gabung (TUREM & KOREM)</option>
+                            </select>
                         </div>
 
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <div>
-                                <label class="block text-xs font-bold text-slate-700 mb-1">Judul Tema Minggu Depan (Kosongkan = Coming Soon)</label>
-                                <input type="text" id="input-next-title" placeholder="Contoh: Berakar dalam Kristus atau kosongkan" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm">
+                        <!-- Blok Form 1 Tema Gabung (Minggu Depan) -->
+                        <div id="admin-next-combined-form" class="hidden space-y-4 p-4 rounded-2xl bg-amber-50/50 border border-amber-200/90">
+                            <div class="flex flex-wrap items-center justify-between gap-2 border-b border-amber-200/80 pb-2">
+                                <h4 class="font-display font-bold text-base text-slate-900">
+                                    <i class="fa-solid fa-people-group text-amber-600 mr-1.5"></i> Form 1 Tema Gabung Minggu Depan
+                                </h4>
+                                <button type="button" onclick="clearThemeFields('nextComb')" class="px-3 py-1 rounded-lg bg-amber-200 hover:bg-amber-300 text-amber-950 text-xs font-bold transition">
+                                    Set Coming Soon
+                                </button>
                             </div>
-                            <div>
-                                <label class="block text-xs font-bold text-slate-700 mb-1">Ayat Pokok (Opsional)</label>
-                                <input type="text" id="input-next-verse" placeholder="Contoh: Kolose 2:6-7" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm">
-                            </div>
-                            <div>
-                                <label class="block text-xs font-bold text-slate-700 mb-1">Tanggal Minggu Depan (Opsional)</label>
-                                <input type="text" id="input-next-date" placeholder="Contoh: Minggu, 29 November 2026" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm">
-                            </div>
-                            <div>
-                                <label class="block text-xs font-bold text-slate-700 mb-1">Pembicara Minggu Depan (Opsional)</label>
-                                <input type="text" id="input-next-speaker" placeholder="Contoh: Ev. Yohanes Wijaya" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm">
-                            </div>
-                            <div class="sm:col-span-2 p-4 rounded-2xl bg-slate-50 border border-slate-200">
-                                <label class="block text-xs font-bold text-slate-700 mb-1.5">Unggah Poster Tema Minggu Depan (Otomatis dikompresi)</label>
-                                <div class="flex flex-wrap items-center gap-3">
-                                    <input type="file" id="input-next-poster-file" accept="image/*" onchange="handlePosterUpload(event, 'next')" class="text-xs text-slate-600 file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-amber-400 file:text-slate-950 hover:file:bg-amber-300 cursor-pointer">
-                                    <button type="button" onclick="clearPoster('next')" id="btn-clear-next-poster" class="hidden px-3 py-1.5 rounded-lg bg-rose-100 text-rose-700 text-xs font-semibold">Hapus Poster</button>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 mb-1">Judul Tema Gabungan (Kosong = Coming Soon)</label>
+                                    <input type="text" id="input-next-comb-title" placeholder="Kosongkan jika Coming Soon" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
                                 </div>
-                                <div id="preview-next-poster-box" class="hidden mt-3">
-                                    <img id="preview-next-poster-img" src="" alt="Preview Poster Minggu Depan" class="h-36 rounded-xl border border-slate-300 object-cover">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 mb-1">Ayat Pokok (Opsional)</label>
+                                    <input type="text" id="input-next-comb-verse" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
                                 </div>
-                            </div>
-                            <div class="sm:col-span-2">
-                                <label class="block text-xs font-bold text-slate-700 mb-1">Deskripsi Persiapan (Opsional)</label>
-                                <textarea id="input-next-desc" rows="2" placeholder="Catatan atau ajakan persiapan untuk jemaat remaja..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm"></textarea>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 mb-1">Hari & Tanggal (Opsional)</label>
+                                    <input type="text" id="input-next-comb-date" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 mb-1">Waktu Ibadah (Opsional)</label>
+                                    <input type="text" id="input-next-comb-time" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 mb-1">Pembicara (Opsional)</label>
+                                    <input type="text" id="input-next-comb-speaker" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 mb-1">Lokasi Ibadah (Opsional)</label>
+                                    <input type="text" id="input-next-comb-loc" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                </div>
+                                <div class="sm:col-span-2 p-3.5 rounded-xl bg-white border border-slate-200">
+                                    <label class="block text-xs font-bold text-slate-700 mb-1.5">Unggah Poster Tema Gabungan Minggu Depan</label>
+                                    <div class="flex flex-wrap items-center gap-3">
+                                        <input type="file" id="input-next-comb-poster-file" accept="image/*" onchange="handlePosterUpload(event, 'nextComb')" class="text-xs text-slate-600 file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-amber-400 file:text-slate-950 hover:file:bg-amber-300 cursor-pointer">
+                                        <button type="button" onclick="clearPoster('nextComb')" id="btn-clear-nextComb-poster" class="hidden px-3 py-1.5 rounded-lg bg-rose-100 text-rose-700 text-xs font-semibold">Hapus Poster</button>
+                                    </div>
+                                    <div id="preview-nextComb-poster-box" class="hidden mt-3">
+                                        <img id="preview-nextComb-poster-img" src="" alt="Preview Poster Gabungan Minggu Depan" class="h-32 rounded-xl border border-slate-300 object-cover">
+                                    </div>
+                                </div>
+                                <div class="sm:col-span-2">
+                                    <label class="block text-xs font-bold text-slate-700 mb-1">Deskripsi Persiapan (Opsional)</label>
+                                    <textarea id="input-next-comb-desc" rows="2" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white"></textarea>
+                                </div>
                             </div>
                         </div>
+
+                        <!-- Blok Form 2 Tema Terpisah Minggu Depan: TUREM & KOREM -->
+                        <div id="admin-next-split-form" class="space-y-6">
+                            <!-- SUB-BLOK TUREM MINGGU DEPAN -->
+                            <div class="space-y-4 p-4 rounded-2xl bg-emerald-50/40 border border-emerald-200/80">
+                                <div class="flex flex-wrap items-center justify-between gap-2 border-b border-emerald-200/70 pb-2">
+                                    <h4 class="font-display font-bold text-base text-slate-900">
+                                        <span class="px-2.5 py-0.5 rounded-lg bg-emerald-600 text-white text-xs mr-2">TUREM</span>
+                                        Tema Tunas Remaja Minggu Depan
+                                    </h4>
+                                    <button type="button" onclick="clearThemeFields('nextTurem')" class="px-3 py-1 rounded-lg bg-emerald-100 hover:bg-emerald-200 text-emerald-900 text-xs font-bold transition">
+                                        Set Coming Soon
+                                    </button>
+                                </div>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Judul Tema TUREM (Kosong = Coming Soon)</label>
+                                        <input type="text" id="input-next-turem-title" placeholder="Kosongkan jika Coming Soon" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Ayat Pokok TUREM (Opsional)</label>
+                                        <input type="text" id="input-next-turem-verse" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Hari & Tanggal TUREM (Opsional)</label>
+                                        <input type="text" id="input-next-turem-date" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Waktu Ibadah TUREM (Opsional)</label>
+                                        <input type="text" id="input-next-turem-time" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Pembicara TUREM (Opsional)</label>
+                                        <input type="text" id="input-next-turem-speaker" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Lokasi TUREM (Opsional)</label>
+                                        <input type="text" id="input-next-turem-loc" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                    </div>
+                                    <div class="sm:col-span-2 p-3.5 rounded-xl bg-white border border-slate-200">
+                                        <label class="block text-xs font-bold text-slate-700 mb-1.5">Unggah Poster TUREM Minggu Depan</label>
+                                        <div class="flex flex-wrap items-center gap-3">
+                                            <input type="file" id="input-next-turem-poster-file" accept="image/*" onchange="handlePosterUpload(event, 'nextTurem')" class="text-xs text-slate-600 file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-emerald-600 file:text-white hover:file:bg-emerald-700 cursor-pointer">
+                                            <button type="button" onclick="clearPoster('nextTurem')" id="btn-clear-nextTurem-poster" class="hidden px-3 py-1.5 rounded-lg bg-rose-100 text-rose-700 text-xs font-semibold">Hapus Poster</button>
+                                        </div>
+                                        <div id="preview-nextTurem-poster-box" class="hidden mt-3">
+                                            <img id="preview-nextTurem-poster-img" src="" alt="Preview Poster TUREM Minggu Depan" class="h-32 rounded-xl border border-slate-300 object-cover">
+                                        </div>
+                                    </div>
+                                    <div class="sm:col-span-2">
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Deskripsi Persiapan TUREM (Opsional)</label>
+                                        <textarea id="input-next-turem-desc" rows="2" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SUB-BLOK KOREM MINGGU DEPAN -->
+                            <div class="space-y-4 p-4 rounded-2xl bg-indigo-50/40 border border-indigo-200/80">
+                                <div class="flex flex-wrap items-center justify-between gap-2 border-b border-indigo-200/70 pb-2">
+                                    <h4 class="font-display font-bold text-base text-slate-900">
+                                        <span class="px-2.5 py-0.5 rounded-lg bg-indigo-600 text-white text-xs mr-2">KOREM</span>
+                                        Tema Komisi Remaja Minggu Depan
+                                    </h4>
+                                    <button type="button" onclick="clearThemeFields('nextKorem')" class="px-3 py-1 rounded-lg bg-indigo-100 hover:bg-indigo-200 text-indigo-900 text-xs font-bold transition">
+                                        Set Coming Soon
+                                    </button>
+                                </div>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Judul Tema KOREM (Kosong = Coming Soon)</label>
+                                        <input type="text" id="input-next-korem-title" placeholder="Kosongkan jika Coming Soon" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Ayat Pokok KOREM (Opsional)</label>
+                                        <input type="text" id="input-next-korem-verse" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Hari & Tanggal KOREM (Opsional)</label>
+                                        <input type="text" id="input-next-korem-date" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Waktu Ibadah KOREM (Opsional)</label>
+                                        <input type="text" id="input-next-korem-time" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Pembicara KOREM (Opsional)</label>
+                                        <input type="text" id="input-next-korem-speaker" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Lokasi KOREM (Opsional)</label>
+                                        <input type="text" id="input-next-korem-loc" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+                                    </div>
+                                    <div class="sm:col-span-2 p-3.5 rounded-xl bg-white border border-slate-200">
+                                        <label class="block text-xs font-bold text-slate-700 mb-1.5">Unggah Poster KOREM Minggu Depan</label>
+                                        <div class="flex flex-wrap items-center gap-3">
+                                            <input type="file" id="input-next-korem-poster-file" accept="image/*" onchange="handlePosterUpload(event, 'nextKorem')" class="text-xs text-slate-600 file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-indigo-600 file:text-white hover:file:bg-indigo-700 cursor-pointer">
+                                            <button type="button" onclick="clearPoster('nextKorem')" id="btn-clear-nextKorem-poster" class="hidden px-3 py-1.5 rounded-lg bg-rose-100 text-rose-700 text-xs font-semibold">Hapus Poster</button>
+                                        </div>
+                                        <div id="preview-nextKorem-poster-box" class="hidden mt-3">
+                                            <img id="preview-nextKorem-poster-img" src="" alt="Preview Poster KOREM Minggu Depan" class="h-32 rounded-xl border border-slate-300 object-cover">
+                                        </div>
+                                    </div>
+                                    <div class="sm:col-span-2">
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Deskripsi Persiapan KOREM (Opsional)</label>
+                                        <textarea id="input-next-korem-desc" rows="2" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="text-right pt-2">
                             <button type="submit" class="px-6 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm shadow-sm transition">
                                 <i class="fa-solid fa-cloud-arrow-up mr-1.5"></i> Simpan Tema Minggu Depan
@@ -577,7 +732,7 @@
                 <!-- TAB 3: WARTA JEMAAT -->
                 <div id="tab-warta" class="admin-tab-content hidden space-y-6">
                     <form onsubmit="addWarta(event)" class="p-4 rounded-2xl bg-slate-50 border border-slate-200 grid grid-cols-1 sm:grid-cols-3 gap-3">
-                        <input type="text" id="new-warta-category" placeholder="Kategori (mis: Latihan Musik)" required class="px-3.5 py-2 rounded-xl border border-slate-300 text-sm bg-white">
+                        <input type="text" id="new-warta-category" placeholder="Kategori (mis: TUREM / KOREM / Musik)" required class="px-3.5 py-2 rounded-xl border border-slate-300 text-sm bg-white">
                         <input type="text" id="new-warta-title" placeholder="Judul Pengumuman" required class="px-3.5 py-2 rounded-xl border border-slate-300 text-sm bg-white">
                         <input type="text" id="new-warta-info" placeholder="Jadwal / Info Singkat" required class="px-3.5 py-2 rounded-xl border border-slate-300 text-sm bg-white">
                         <textarea id="new-warta-detail" rows="2" placeholder="Isi detail warta..." required class="sm:col-span-3 px-3.5 py-2 rounded-xl border border-slate-300 text-sm bg-white"></textarea>
@@ -616,8 +771,8 @@
                 <!-- TAB 5: ARSIP DOKUMENTASI -->
                 <div id="tab-dok" class="admin-tab-content hidden space-y-6">
                     <form onsubmit="addDocArchive(event)" class="p-4 rounded-2xl bg-slate-50 border border-slate-200 grid grid-cols-1 sm:grid-cols-2 gap-3">
-                        <input type="text" id="new-doc-theme" placeholder="Tema Ibadah Minggu Itu" required class="px-3.5 py-2 rounded-xl border border-slate-300 text-sm bg-white">
-                        <input type="text" id="new-doc-date" placeholder="Tanggal Ibadah (mis: 15 Nov 2026)" required class="px-3.5 py-2 rounded-xl border border-slate-300 text-sm bg-white">
+                        <input type="text" id="new-doc-theme" placeholder="Tema Ibadah (mis: TUREM - ... / KOREM - ... / Gabungan - ...)" required class="px-3.5 py-2 rounded-xl border border-slate-300 text-sm bg-white">
+                        <input type="text" id="new-doc-date" placeholder="Tanggal Ibadah (mis: 22 Nov 2026)" required class="px-3.5 py-2 rounded-xl border border-slate-300 text-sm bg-white">
                         <input type="text" id="new-doc-verse" placeholder="Ayat Pokok (mis: 1 Timotius 4:12)" required class="px-3.5 py-2 rounded-xl border border-slate-300 text-sm bg-white">
                         <select id="new-doc-platform" class="px-3.5 py-2 rounded-xl border border-slate-300 text-sm bg-white">
                             <option value="Google Drive">Google Drive (Foto & Video)</option>
@@ -663,48 +818,94 @@
             measurementId: "G-S7J47B83VV"
         };
 
-        // 3. DATA DEFAULT AWAL (Digunakan jika Firestore masih kosong)
+        // 3. DATA DEFAULT AWAL
         const DEFAULT_DATA = {
-            currentTheme: {
-                title: "Menjadi Teladan di Masa Muda",
-                verse: "1 Timotius 4:12",
-                desc: "Jangan seorang pun menganggap engkau rendah karena engkau muda. Jadilah teladan bagi orang-orang percaya dalam perkataan, tingkah laku, kasih, kesetiaan, dan kesucian.",
+            curMode: "split", // "split" (TUREM & KOREM) atau "combined" (1 tema gabungan)
+            curCombined: {
+                title: "Satu Hati dalam Kristus",
+                verse: "Filipi 2:2",
+                desc: "Ibadah gabungan TUREM & KOREM untuk memperkuat kebersamaan dan visi pelayanan remaja GKII.",
                 date: "Minggu, 22 November 2026",
                 time: "10.00 WIB - Selesai",
                 speaker: "Pdt. Samuel Pratama, M.Th",
-                location: "Ruang Ibadah Remaja Lt. 2, GKII",
+                location: "Aula Utama GKII",
                 docLink: "https://drive.google.com",
                 poster: ""
             },
-            nextTheme: {
+            curTurem: {
+                title: "Bertumbuh dalam Kebenaran",
+                verse: "1 Timotius 4:12",
+                desc: "Panggilan Tunas Remaja (TUREM) untuk belajar mengenal firman Tuhan dan menjadi teladan sejak dini.",
+                date: "Minggu, 22 November 2026",
+                time: "08.00 WIB - Selesai",
+                speaker: "Kak Daniel Saputra",
+                location: "Ruang TUREM Lt. 1, GKII",
+                docLink: "https://drive.google.com",
+                poster: ""
+            },
+            curKorem: {
+                title: "Terang di Tengah Generasi",
+                verse: "Matius 5:14-16",
+                desc: "Komisi Remaja (KOREM) dipanggil menghadirkan dampak positif di sekolah, kampus, dan lingkungan pergaulan.",
+                date: "Minggu, 22 November 2026",
+                time: "10.30 WIB - Selesai",
+                speaker: "Ev. Yohanes Wijaya",
+                location: "Ruang KOREM Lt. 2, GKII",
+                docLink: "https://drive.google.com",
+                poster: ""
+            },
+            nextMode: "split", // "split" (TUREM & KOREM) atau "combined" (1 tema gabungan)
+            nextCombined: {
                 title: "",
                 verse: "",
                 desc: "",
                 date: "",
+                time: "",
                 speaker: "",
+                location: "",
+                poster: ""
+            },
+            nextTurem: {
+                title: "",
+                verse: "",
+                desc: "",
+                date: "",
+                time: "",
+                speaker: "",
+                location: "",
+                poster: ""
+            },
+            nextKorem: {
+                title: "",
+                verse: "",
+                desc: "",
+                date: "",
+                time: "",
+                speaker: "",
+                location: "",
                 poster: ""
             },
             warta: [
                 {
                     id: "w1",
-                    category: "Latihan Pelayanan",
+                    category: "TUREM & KOREM",
                     title: "Latihan Musik & Multimedia",
                     info: "Sabtu, 16.00 WIB",
-                    detail: "Seluruh tim musik, singer, dan operator LCD wajib hadir tepat waktu di ruang remaja."
+                    detail: "Seluruh tim musik, singer, dan operator LCD wajib hadir tepat waktu."
                 },
                 {
                     id: "w2",
-                    category: "Persekutuan",
-                    title: "Kelompok Tumbuh Bersama (KTB)",
-                    info: "Rabu, 19.00 WIB",
-                    detail: "Sharing firman dan doa syafaat bersama kakak pembina kelompok masing-masing."
+                    category: "TUREM",
+                    title: "Sharing Tunas Remaja",
+                    info: "Sabtu, 14.00 WIB",
+                    detail: "Sesi diskusi santai dan doa bersama kakak pembina TUREM."
                 },
                 {
                     id: "w3",
-                    category: "Diakonia",
-                    title: "Kunjungan Kasih Remaja",
-                    info: "Minggu Depan",
-                    detail: "Mari ambil bagian dalam pelayanan kasih mengunjungi rekan remaja yang sedang sakit."
+                    category: "KOREM",
+                    title: "Kelompok Tumbuh Bersama (KTB)",
+                    info: "Rabu, 19.00 WIB",
+                    detail: "Sharing firman dan doa syafaat bersama kelompok KOREM masing-masing."
                 }
             ],
             events: [
@@ -713,7 +914,7 @@
                     title: "Youth Camp GKII 2026: Unshakable",
                     date: "18 - 20 Desember 2026",
                     location: "Villa Bukit Indah, Puncak",
-                    desc: "Retret akhir tahun khusus remaja GKII untuk mempererat persaudaraan, pemulihan rohani, dan pembekalan pemimpin muda.",
+                    desc: "Retret akhir tahun gabungan TUREM & KOREM untuk mempererat persaudaraan dan pertumbuhan iman.",
                     link: "https://wa.me/6281234567890",
                     poster: ""
                 },
@@ -722,7 +923,7 @@
                     title: "Ibadah Padang & Outbound",
                     date: "10 Januari 2027",
                     location: "Taman Wisata Alam",
-                    desc: "Ibadah syukur awal tahun di alam terbuka dilanjutkan dengan permainan kekompakan kelompok remaja.",
+                    desc: "Ibadah syukur awal tahun di alam terbuka dilanjutkan dengan permainan kekompakan kelompok.",
                     link: "https://wa.me/6281234567890",
                     poster: ""
                 }
@@ -730,7 +931,7 @@
             docs: [
                 {
                     id: "d1",
-                    theme: "Menjadi Teladan di Masa Muda",
+                    theme: "TUREM - Bertumbuh dalam Kebenaran",
                     date: "22 Nov 2026",
                     verse: "1 Timotius 4:12",
                     platform: "Google Drive",
@@ -738,34 +939,37 @@
                 },
                 {
                     id: "d2",
-                    theme: "Iman yang Mengalahkan Dunia",
-                    date: "15 Nov 2026",
-                    verse: "1 Yohanes 5:4",
+                    theme: "KOREM - Terang di Tengah Generasi",
+                    date: "22 Nov 2026",
+                    verse: "Matius 5:14-16",
                     platform: "YouTube",
                     url: "https://youtube.com"
                 },
                 {
                     id: "d3",
-                    theme: "Hidup Dipimpin oleh Roh",
-                    date: "08 Nov 2026",
-                    verse: "Galatia 5:25",
+                    theme: "Gabungan - Satu Hati dalam Kristus",
+                    date: "15 Nov 2026",
+                    verse: "Filipi 2:2",
                     platform: "Instagram",
                     url: "https://instagram.com"
                 }
             ]
         };
 
-        // State Aplikasi
         let appData = JSON.parse(JSON.stringify(DEFAULT_DATA));
         let isAdminAuthenticated = sessionStorage.getItem('remaja_gkii_admin_auth') === 'true';
-        let pendingPosters = { cur: "", next: "", event: "" };
+        let pendingPosters = {
+            curComb: "", curTurem: "", curKorem: "",
+            nextComb: "", nextTurem: "", nextKorem: "",
+            event: ""
+        };
         let db = null;
         let siteDocRef = null;
 
         // ==================== FUNGSI UTILITAS UI & KOMPRESI GAMBAR ====================
 
-        function isNextThemeEmpty(nxt) {
-            const title = (nxt?.title || '').trim().toLowerCase();
+        function isThemeTitleEmpty(themeObj) {
+            const title = (themeObj?.title || '').trim().toLowerCase();
             return !title || title === 'coming soon' || title === '-';
         }
 
@@ -800,7 +1004,6 @@
             }, 3200);
         }
 
-        // Kompresi gambar menggunakan HTML5 Canvas (Max width 800px, JPEG 0.75)
         function compressImageToBase64(file) {
             return new Promise((resolve, reject) => {
                 const reader = new FileReader();
@@ -822,8 +1025,7 @@
                         const ctx = canvas.getContext('2d');
                         ctx.drawImage(img, 0, 0, width, height);
 
-                        const compressedDataUrl = canvas.toDataURL('image/jpeg', 0.75);
-                        resolve(compressedDataUrl);
+                        resolve(canvas.toDataURL('image/jpeg', 0.75));
                     };
                     img.onerror = reject;
                     img.src = event.target.result;
@@ -833,10 +1035,10 @@
             });
         }
 
-        function updatePosterPreviewUI(type, base64Str) {
-            const box = document.getElementById(`preview-${type}-poster-box`);
-            const img = document.getElementById(`preview-${type}-poster-img`);
-            const btn = document.getElementById(`btn-clear-${type}-poster`);
+        function updatePosterPreviewUI(key, base64Str) {
+            const box = document.getElementById(`preview-${key}-poster-box`);
+            const img = document.getElementById(`preview-${key}-poster-img`);
+            const btn = document.getElementById(`btn-clear-${key}-poster`);
             if (!box || !img || !btn) return;
 
             if (base64Str) {
@@ -853,7 +1055,8 @@
         // ==================== RENDER HALAMAN PUBLIK ====================
 
         function renderAll() {
-            renderThemes();
+            renderCurrentThemes();
+            renderNextThemes();
             renderWarta();
             renderEvents();
             renderDocs();
@@ -862,93 +1065,227 @@
             }
         }
 
-        function renderThemes() {
-            const cur = appData.currentTheme || DEFAULT_DATA.currentTheme;
-            document.getElementById('hero-theme-title').textContent = cur.title;
-            document.getElementById('hero-theme-verse').textContent = cur.verse;
-            document.getElementById('hero-theme-desc').textContent = cur.desc;
-            document.getElementById('hero-date').textContent = cur.date;
-            document.getElementById('hero-time').textContent = cur.time;
-            document.getElementById('hero-speaker').textContent = cur.speaker;
-            document.getElementById('hero-location').textContent = cur.location;
-            document.getElementById('hero-doc-link').href = cur.docLink || "#dokumentasi";
+        // Kartu Tema Minggu Ini (Tema Gelap)
+        function buildCurrentThemeCardHTML(themeObj, options) {
+            const { badgeText, badgeStyle, isCombined } = options;
+            const title = themeObj.title || "Tema Ibadah";
+            const verse = themeObj.verse || "";
+            const desc = themeObj.desc || "";
+            const date = themeObj.date || "-";
+            const time = themeObj.time || "-";
+            const speaker = themeObj.speaker || "-";
+            const location = themeObj.location || "-";
+            const docLink = themeObj.docLink || "#dokumentasi";
+            const poster = themeObj.poster || "";
 
-            const heroImg = document.getElementById('hero-poster-img');
-            const heroFallback = document.getElementById('hero-poster-fallback');
-            if (cur.poster) {
-                heroImg.src = cur.poster;
-                heroImg.classList.remove('hidden');
-                heroFallback.classList.add('hidden');
+            return `
+                <div class="rounded-3xl bg-slate-900/90 border ${isCombined ? 'border-amber-400/40' : 'border-slate-800'} p-6 sm:p-8 shadow-2xl flex flex-col justify-between space-y-6">
+                    <div class="space-y-5">
+                        <div class="flex items-center justify-between gap-2 flex-wrap">
+                            <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider ${badgeStyle}">
+                                ${badgeText}
+                            </span>
+                            <span class="text-xs font-semibold text-slate-400">
+                                <i class="fa-regular fa-calendar mr-1 text-amber-400"></i>${date}
+                            </span>
+                        </div>
+
+                        ${poster
+                            ? `<div class="rounded-2xl overflow-hidden border border-white/10 bg-slate-950">
+                                   <img src="${poster}" alt="Poster ${title}" class="w-full ${isCombined ? 'max-h-96' : 'h-56'} object-cover">
+                               </div>`
+                            : ''
+                        }
+
+                        <div>
+                            <h2 class="font-display font-extrabold ${isCombined ? 'text-2xl sm:text-4xl' : 'text-xl sm:text-2xl'} text-white leading-snug">
+                                ${title}
+                            </h2>
+                            ${verse
+                                ? `<p class="font-display font-bold text-amber-300 text-sm sm:text-base mt-1.5">
+                                       <i class="fa-solid fa-book-bible mr-1.5"></i>${verse}
+                                   </p>`
+                                : ''
+                            }
+                            ${desc
+                                ? `<p class="text-slate-300 text-sm mt-3 leading-relaxed">${desc}</p>`
+                                : ''
+                            }
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm pt-1">
+                            <div class="p-3 rounded-2xl bg-slate-800/60 border border-slate-700/50">
+                                <span class="text-[11px] text-slate-400 uppercase tracking-wider font-semibold block">Waktu</span>
+                                <p class="text-white font-semibold mt-0.5">${time}</p>
+                            </div>
+                            <div class="p-3 rounded-2xl bg-slate-800/60 border border-slate-700/50">
+                                <span class="text-[11px] text-slate-400 uppercase tracking-wider font-semibold block">Pembicara</span>
+                                <p class="text-white font-semibold mt-0.5">${speaker}</p>
+                            </div>
+                            <div class="p-3 rounded-2xl bg-slate-800/60 border border-slate-700/50 sm:col-span-2">
+                                <span class="text-[11px] text-slate-400 uppercase tracking-wider font-semibold block">Lokasi Ibadah</span>
+                                <p class="text-white font-semibold mt-0.5"><i class="fa-solid fa-location-dot text-amber-400 mr-1.5"></i>${location}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <a href="${docLink}" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-sm shadow-lg shadow-amber-500/15 transition">
+                            <i class="fa-solid fa-photo-film"></i>
+                            <span>Link Dokumentasi Ibadah</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderCurrentThemes() {
+            const container = document.getElementById('current-themes-container');
+            const heading = document.getElementById('cur-section-heading');
+            const mode = appData.curMode || "split";
+
+            if (mode === "combined") {
+                const comb = appData.curCombined || DEFAULT_DATA.curCombined;
+                heading.textContent = "Tema Gabung • TUREM & KOREM";
+                container.innerHTML = buildCurrentThemeCardHTML(comb, {
+                    badgeText: "TEMA GABUNG • TUREM & KOREM",
+                    badgeStyle: "bg-amber-400 text-slate-950",
+                    isCombined: true
+                });
             } else {
-                heroImg.classList.add('hidden');
-                heroFallback.classList.remove('hidden');
+                const turem = appData.curTurem || DEFAULT_DATA.curTurem;
+                const korem = appData.curKorem || DEFAULT_DATA.curKorem;
+                heading.textContent = "TUREM (Tunas Remaja) & KOREM (Komisi Remaja)";
+                container.innerHTML = `
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-7">
+                        ${buildCurrentThemeCardHTML(turem, {
+                            badgeText: "TUREM • TUNAS REMAJA",
+                            badgeStyle: "bg-emerald-500/20 text-emerald-300 border border-emerald-400/30",
+                            isCombined: false
+                        })}
+                        ${buildCurrentThemeCardHTML(korem, {
+                            badgeText: "KOREM • KOMISI REMAJA",
+                            badgeStyle: "bg-indigo-500/20 text-indigo-300 border border-indigo-400/30",
+                            isCombined: false
+                        })}
+                    </div>
+                `;
             }
+        }
 
-            const nxt = appData.nextTheme || DEFAULT_DATA.nextTheme;
-            const comingSoon = isNextThemeEmpty(nxt);
+        // Kartu Tema Minggu Depan (Mendukung Coming Soon per Divisi atau Gabungan)
+        function buildNextThemeCardHTML(themeObj, options) {
+            const { badgeText, badgeStyle, isCombined } = options;
+            const comingSoon = isThemeTitleEmpty(themeObj);
+            const title = comingSoon ? "Coming Soon" : themeObj.title;
+            const verse = (themeObj.verse || "").trim();
+            const desc = (themeObj.desc || "").trim() || (comingSoon
+                ? "Tema ibadah untuk minggu depan sedang dipersiapkan oleh tim pelayanan. Nantikan informasi terbarunya!"
+                : "");
+            const date = (themeObj.date || "").trim();
+            const time = (themeObj.time || "").trim();
+            const speaker = (themeObj.speaker || "").trim();
+            const location = (themeObj.location || "").trim();
+            const poster = themeObj.poster || "";
 
-            const comingSoonBadge = document.getElementById('next-coming-soon-badge');
-            const nextTitleEl = document.getElementById('next-theme-title');
-            const nextDescEl = document.getElementById('next-theme-desc');
-            const nextMetaEl = document.getElementById('next-theme-meta');
-            const fallbackIcon = document.getElementById('next-fallback-icon');
-            const fallbackTitle = document.getElementById('next-fallback-title');
-            const fallbackDesc = document.getElementById('next-fallback-desc');
+            const hasMeta = !comingSoon && (verse || date || time || speaker || location);
 
-            if (comingSoon) {
-                comingSoonBadge.classList.remove('hidden');
-                nextTitleEl.textContent = "Coming Soon";
-                nextDescEl.textContent = (nxt.desc || '').trim() || "Tema ibadah untuk minggu depan sedang dipersiapkan oleh tim pelayanan. Nantikan informasi terbarunya!";
-                nextMetaEl.classList.add('hidden');
-                fallbackIcon.className = "fa-regular fa-hourglass-half";
-                fallbackTitle.textContent = "Coming Soon";
-                fallbackDesc.textContent = "Detail ayat, pembicara, dan jadwal minggu depan akan segera diumumkan.";
+            return `
+                <div class="rounded-3xl bg-white border ${isCombined ? 'border-amber-300' : 'border-slate-200/90'} p-6 sm:p-8 shadow-sm flex flex-col justify-between space-y-5">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between gap-2 flex-wrap">
+                            <div class="flex items-center gap-2 flex-wrap">
+                                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider ${badgeStyle}">
+                                    ${badgeText}
+                                </span>
+                                ${comingSoon
+                                    ? `<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-wider">
+                                           <i class="fa-regular fa-hourglass-half"></i> Coming Soon
+                                       </span>`
+                                    : ''
+                                }
+                            </div>
+                            ${!comingSoon && date
+                                ? `<span class="text-xs font-semibold text-slate-500"><i class="fa-regular fa-calendar mr-1 text-indigo-600"></i>${date}</span>`
+                                : ''
+                            }
+                        </div>
+
+                        ${poster
+                            ? `<div class="rounded-2xl overflow-hidden border border-slate-200 bg-slate-50">
+                                   <img src="${poster}" alt="Poster ${title}" class="w-full ${isCombined ? 'max-h-80' : 'h-52'} object-cover">
+                               </div>`
+                            : ''
+                        }
+
+                        <div>
+                            <h3 class="font-display font-extrabold ${isCombined ? 'text-2xl sm:text-3xl' : 'text-xl sm:text-2xl'} ${comingSoon ? 'text-slate-800' : 'text-indigo-950'} leading-snug">
+                                ${title}
+                            </h3>
+                            ${!comingSoon && verse
+                                ? `<p class="font-display font-bold text-indigo-700 text-sm mt-1">
+                                       <i class="fa-solid fa-book-bible mr-1.5"></i>${verse}
+                                   </p>`
+                                : ''
+                            }
+                            ${desc
+                                ? `<p class="text-slate-600 text-sm mt-2.5 leading-relaxed">${desc}</p>`
+                                : ''
+                            }
+                        </div>
+
+                        ${hasMeta
+                            ? `<div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs pt-1">
+                                   ${time ? `<div class="p-3 rounded-xl bg-slate-50 border border-slate-200/70"><span class="text-slate-400 font-semibold block">Waktu</span><span class="text-slate-800 font-semibold">${time}</span></div>` : ''}
+                                   ${speaker ? `<div class="p-3 rounded-xl bg-slate-50 border border-slate-200/70"><span class="text-slate-400 font-semibold block">Pembicara</span><span class="text-slate-800 font-semibold">${speaker}</span></div>` : ''}
+                                   ${location ? `<div class="p-3 rounded-xl bg-slate-50 border border-slate-200/70 sm:col-span-2"><span class="text-slate-400 font-semibold block">Lokasi</span><span class="text-slate-800 font-semibold">${location}</span></div>` : ''}
+                               </div>`
+                            : ''
+                        }
+                    </div>
+
+                    <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                        <span class="flex items-center gap-1.5">
+                            <i class="${comingSoon ? 'fa-regular fa-clock text-amber-600' : 'fa-solid fa-hands-praying text-indigo-600'}"></i>
+                            ${comingSoon ? 'Segera diumumkan pengurus' : 'Mari siapkan hati menyambut firman'}
+                        </span>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderNextThemes() {
+            const container = document.getElementById('next-themes-container');
+            const heading = document.getElementById('next-section-heading');
+            const mode = appData.nextMode || "split";
+
+            if (mode === "combined") {
+                const comb = appData.nextCombined || DEFAULT_DATA.nextCombined;
+                heading.textContent = "Tema Minggu Depan • Gabung (TUREM & KOREM)";
+                container.innerHTML = buildNextThemeCardHTML(comb, {
+                    badgeText: "TEMA GABUNG • TUREM & KOREM",
+                    badgeStyle: "bg-amber-100 text-amber-900",
+                    isCombined: true
+                });
             } else {
-                comingSoonBadge.classList.add('hidden');
-                nextTitleEl.textContent = nxt.title;
-                nextDescEl.textContent = (nxt.desc || '').trim() || "Mari siapkan hati untuk firman Tuhan minggu depan.";
-                nextMetaEl.classList.remove('hidden');
-
-                const versePill = document.getElementById('next-verse-pill');
-                const datePill = document.getElementById('next-date-pill');
-                const speakerPill = document.getElementById('next-speaker-pill');
-
-                if ((nxt.verse || '').trim()) {
-                    document.getElementById('next-theme-verse').textContent = nxt.verse;
-                    versePill.classList.remove('hidden');
-                } else {
-                    versePill.classList.add('hidden');
-                }
-
-                if ((nxt.date || '').trim()) {
-                    document.getElementById('next-theme-date').textContent = nxt.date;
-                    datePill.classList.remove('hidden');
-                } else {
-                    datePill.classList.add('hidden');
-                }
-
-                if ((nxt.speaker || '').trim()) {
-                    document.getElementById('next-theme-speaker').textContent = nxt.speaker;
-                    speakerPill.classList.remove('hidden');
-                } else {
-                    speakerPill.classList.add('hidden');
-                }
-
-                fallbackIcon.className = "fa-solid fa-hands-praying";
-                fallbackTitle.textContent = "Mari Siapkan Hati";
-                fallbackDesc.textContent = "Baca perikop Alkitab minggu depan terlebih dahulu dan ajak teman remaja lainnya hadir bersama.";
-            }
-
-            const nextBox = document.getElementById('next-poster-box');
-            const nextImg = document.getElementById('next-poster-img');
-            const nextFallback = document.getElementById('next-poster-fallback');
-            if (nxt.poster) {
-                nextImg.src = nxt.poster;
-                nextBox.classList.remove('hidden');
-                nextFallback.classList.add('hidden');
-            } else {
-                nextBox.classList.add('hidden');
-                nextFallback.classList.remove('hidden');
+                const turem = appData.nextTurem || DEFAULT_DATA.nextTurem;
+                const korem = appData.nextKorem || DEFAULT_DATA.nextKorem;
+                heading.textContent = "Tema Minggu Depan • TUREM & KOREM";
+                container.innerHTML = `
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-7">
+                        ${buildNextThemeCardHTML(turem, {
+                            badgeText: "TUREM • TUNAS REMAJA",
+                            badgeStyle: "bg-emerald-100 text-emerald-800",
+                            isCombined: false
+                        })}
+                        ${buildNextThemeCardHTML(korem, {
+                            badgeText: "KOREM • KOMISI REMAJA",
+                            badgeStyle: "bg-indigo-100 text-indigo-800",
+                            isCombined: false
+                        })}
+                    </div>
+                `;
             }
         }
 
@@ -1078,8 +1415,16 @@
         };
 
         window.copyShareText = function() {
-            const cur = appData.currentTheme;
-            const text = `Shalom Remaja GKII! Mari hadir di Ibadah Minggu Ini:\nTema: "${cur.title}" (${cur.verse})\nWaktu: ${cur.date}, ${cur.time}\nLokasi: ${cur.location}\nDokumentasi: ${cur.docLink}`;
+            let text = "Shalom Remaja GKII!\n";
+            if ((appData.curMode || "split") === "combined") {
+                const c = appData.curCombined;
+                text += `[TEMA GABUNG • TUREM & KOREM]\nTema: "${c.title}" (${c.verse})\nWaktu: ${c.date}, ${c.time}\nLokasi: ${c.location}\nDokumentasi: ${c.docLink}`;
+            } else {
+                const t = appData.curTurem;
+                const k = appData.curKorem;
+                text += `\n[TUREM]\nTema: "${t.title}" (${t.verse})\nWaktu: ${t.date}, ${t.time}\nDokumentasi: ${t.docLink}\n\n[KOREM]\nTema: "${k.title}" (${k.verse})\nWaktu: ${k.date}, ${k.time}\nDokumentasi: ${k.docLink}`;
+            }
+
             const textarea = document.createElement('textarea');
             textarea.value = text;
             document.body.appendChild(textarea);
@@ -1119,7 +1464,6 @@
             modal.classList.remove('flex');
         };
 
-        // Autentikasi Token Admin
         window.openAdminModal = function() {
             if (isAdminAuthenticated) {
                 launchAdminDashboard();
@@ -1171,27 +1515,55 @@
             showToast("Panel admin dikunci.");
         };
 
-        function launchAdminDashboard() {
-            const cur = appData.currentTheme;
-            document.getElementById('input-cur-title').value = cur.title;
-            document.getElementById('input-cur-verse').value = cur.verse;
-            document.getElementById('input-cur-date').value = cur.date;
-            document.getElementById('input-cur-time').value = cur.time;
-            document.getElementById('input-cur-speaker').value = cur.speaker;
-            document.getElementById('input-cur-loc').value = cur.location;
-            document.getElementById('input-cur-doclink').value = cur.docLink;
-            document.getElementById('input-cur-desc').value = cur.desc;
-            pendingPosters.cur = cur.poster || "";
-            updatePosterPreviewUI('cur', pendingPosters.cur);
+        window.toggleAdminThemeModeUI = function(period) {
+            const mode = document.getElementById(`input-${period}-mode`).value;
+            const splitForm = document.getElementById(`admin-${period}-split-form`);
+            const combinedForm = document.getElementById(`admin-${period}-combined-form`);
 
-            const nxt = appData.nextTheme;
-            document.getElementById('input-next-title').value = isNextThemeEmpty(nxt) ? "" : nxt.title;
-            document.getElementById('input-next-verse').value = nxt.verse || "";
-            document.getElementById('input-next-date').value = nxt.date || "";
-            document.getElementById('input-next-speaker').value = nxt.speaker || "";
-            document.getElementById('input-next-desc').value = nxt.desc || "";
-            pendingPosters.next = nxt.poster || "";
-            updatePosterPreviewUI('next', pendingPosters.next);
+            if (mode === 'combined') {
+                combinedForm.classList.remove('hidden');
+                splitForm.classList.add('hidden');
+            } else {
+                splitForm.classList.remove('hidden');
+                combinedForm.classList.add('hidden');
+            }
+        };
+
+        function populateThemeForm(prefix, themeObj, posterKey) {
+            const t = themeObj || {};
+            const isEmpty = prefix.startsWith('input-next-') && isThemeTitleEmpty(t);
+            document.getElementById(`${prefix}-title`).value = isEmpty ? "" : (t.title || "");
+            document.getElementById(`${prefix}-verse`).value = t.verse || "";
+            document.getElementById(`${prefix}-date`).value = t.date || "";
+            const timeEl = document.getElementById(`${prefix}-time`);
+            if (timeEl) timeEl.value = t.time || "";
+            document.getElementById(`${prefix}-speaker`).value = t.speaker || "";
+            const locEl = document.getElementById(`${prefix}-loc`);
+            if (locEl) locEl.value = t.location || "";
+            const docEl = document.getElementById(`${prefix}-doclink`);
+            if (docEl) docEl.value = t.docLink || "";
+            document.getElementById(`${prefix}-desc`).value = t.desc || "";
+
+            pendingPosters[posterKey] = t.poster || "";
+            updatePosterPreviewUI(posterKey, pendingPosters[posterKey]);
+        }
+
+        function launchAdminDashboard() {
+            // Minggu Ini
+            const curMode = appData.curMode || "split";
+            document.getElementById('input-cur-mode').value = curMode;
+            toggleAdminThemeModeUI('cur');
+            populateThemeForm('input-cur-comb', appData.curCombined, 'curComb');
+            populateThemeForm('input-cur-turem', appData.curTurem, 'curTurem');
+            populateThemeForm('input-cur-korem', appData.curKorem, 'curKorem');
+
+            // Minggu Depan
+            const nextMode = appData.nextMode || "split";
+            document.getElementById('input-next-mode').value = nextMode;
+            toggleAdminThemeModeUI('next');
+            populateThemeForm('input-next-comb', appData.nextCombined, 'nextComb');
+            populateThemeForm('input-next-turem', appData.nextTurem, 'nextTurem');
+            populateThemeForm('input-next-korem', appData.nextKorem, 'nextKorem');
 
             renderAdminLists();
             const modal = document.getElementById('admin-modal');
@@ -1218,15 +1590,31 @@
             active.classList.remove('text-slate-600', 'font-semibold');
         };
 
-        // Upload & Kompresi Poster
-        window.handlePosterUpload = async function(event, type) {
+        window.clearThemeFields = function(posterKey) {
+            const prefixMap = {
+                nextComb: 'input-next-comb',
+                nextTurem: 'input-next-turem',
+                nextKorem: 'input-next-korem'
+            };
+            const prefix = prefixMap[posterKey];
+            if (!prefix) return;
+
+            ['title', 'verse', 'date', 'time', 'speaker', 'loc', 'desc'].forEach(field => {
+                const el = document.getElementById(`${prefix}-${field}`);
+                if (el) el.value = "";
+            });
+            clearPoster(posterKey);
+            showToast("Field dikosongkan. Klik Simpan untuk menerapkan Coming Soon.");
+        };
+
+        window.handlePosterUpload = async function(event, key) {
             const file = event.target.files?.[0];
             if (!file) return;
             try {
                 showToast("Mengompresi poster...");
                 const compressedBase64 = await compressImageToBase64(file);
-                pendingPosters[type] = compressedBase64;
-                updatePosterPreviewUI(type, compressedBase64);
+                pendingPosters[key] = compressedBase64;
+                updatePosterPreviewUI(key, compressedBase64);
                 showToast("Poster siap disimpan!");
             } catch (err) {
                 console.error(err);
@@ -1234,66 +1622,64 @@
             }
         };
 
-        window.clearPoster = function(type) {
-            pendingPosters[type] = "";
-            updatePosterPreviewUI(type, "");
+        window.clearPoster = function(key) {
+            pendingPosters[key] = "";
+            updatePosterPreviewUI(key, "");
             const fileInputMap = {
-                cur: 'input-cur-poster-file',
-                next: 'input-next-poster-file',
+                curComb: 'input-cur-comb-poster-file',
+                curTurem: 'input-cur-turem-poster-file',
+                curKorem: 'input-cur-korem-poster-file',
+                nextComb: 'input-next-comb-poster-file',
+                nextTurem: 'input-next-turem-poster-file',
+                nextKorem: 'input-next-korem-poster-file',
                 event: 'new-event-poster-file'
             };
-            const inputEl = document.getElementById(fileInputMap[type]);
+            const inputEl = document.getElementById(fileInputMap[key]);
             if (inputEl) inputEl.value = '';
         };
 
+        function readThemeForm(prefix, posterKey, isNext = false) {
+            const rawTitle = document.getElementById(`${prefix}-title`).value.trim();
+            const isEmptyTitle = !rawTitle || rawTitle.toLowerCase() === 'coming soon' || rawTitle === '-';
+
+            return {
+                title: isNext && isEmptyTitle ? "" : rawTitle,
+                verse: document.getElementById(`${prefix}-verse`).value.trim(),
+                date: document.getElementById(`${prefix}-date`).value.trim(),
+                time: document.getElementById(`${prefix}-time`)?.value.trim() || "",
+                speaker: document.getElementById(`${prefix}-speaker`).value.trim(),
+                location: document.getElementById(`${prefix}-loc`)?.value.trim() || "",
+                docLink: document.getElementById(`${prefix}-doclink`)?.value.trim() || "#dokumentasi",
+                desc: document.getElementById(`${prefix}-desc`).value.trim(),
+                poster: pendingPosters[posterKey] || ""
+            };
+        }
+
         // Simpan Tema Minggu Ini
-        window.saveCurrentTheme = async function(e) {
+        window.saveCurrentThemes = async function(e) {
             e.preventDefault();
             if (!isAdminAuthenticated) return;
 
-            appData.currentTheme = {
-                title: document.getElementById('input-cur-title').value,
-                verse: document.getElementById('input-cur-verse').value,
-                date: document.getElementById('input-cur-date').value,
-                time: document.getElementById('input-cur-time').value,
-                speaker: document.getElementById('input-cur-speaker').value,
-                location: document.getElementById('input-cur-loc').value,
-                docLink: document.getElementById('input-cur-doclink').value,
-                desc: document.getElementById('input-cur-desc').value,
-                poster: pendingPosters.cur
-            };
-            renderThemes();
+            appData.curMode = document.getElementById('input-cur-mode').value;
+            appData.curCombined = readThemeForm('input-cur-comb', 'curComb', false);
+            appData.curTurem = readThemeForm('input-cur-turem', 'curTurem', false);
+            appData.curKorem = readThemeForm('input-cur-korem', 'curKorem', false);
+
+            renderCurrentThemes();
             await saveDataToCloud();
         };
 
-        // Kosongkan field Tema Minggu Depan agar otomatis jadi Coming Soon
-        window.setNextThemeComingSoon = function() {
-            document.getElementById('input-next-title').value = "";
-            document.getElementById('input-next-verse').value = "";
-            document.getElementById('input-next-date').value = "";
-            document.getElementById('input-next-speaker').value = "";
-            document.getElementById('input-next-desc').value = "";
-            clearPoster('next');
-            showToast("Field dikosongkan. Klik 'Simpan Tema Minggu Depan' untuk terapkan Coming Soon.");
-        };
-
         // Simpan Tema Minggu Depan
-        window.saveNextTheme = async function(e) {
+        window.saveNextThemes = async function(e) {
             e.preventDefault();
             if (!isAdminAuthenticated) return;
 
-            const rawTitle = document.getElementById('input-next-title').value.trim();
-            const isEmpty = !rawTitle || rawTitle.toLowerCase() === 'coming soon' || rawTitle === '-';
+            appData.nextMode = document.getElementById('input-next-mode').value;
+            appData.nextCombined = readThemeForm('input-next-comb', 'nextComb', true);
+            appData.nextTurem = readThemeForm('input-next-turem', 'nextTurem', true);
+            appData.nextKorem = readThemeForm('input-next-korem', 'nextKorem', true);
 
-            appData.nextTheme = {
-                title: isEmpty ? "" : rawTitle,
-                verse: document.getElementById('input-next-verse').value.trim(),
-                date: document.getElementById('input-next-date').value.trim(),
-                speaker: document.getElementById('input-next-speaker').value.trim(),
-                desc: document.getElementById('input-next-desc').value.trim(),
-                poster: pendingPosters.next
-            };
-            renderThemes();
+            renderNextThemes();
             await saveDataToCloud();
         };
 
@@ -1391,7 +1777,6 @@
         };
 
         function renderAdminLists() {
-            // Daftar Warta di Admin
             const adminWarta = document.getElementById('admin-warta-list');
             if (adminWarta) {
                 adminWarta.innerHTML = (appData.warta || []).map(w => `
@@ -1405,7 +1790,6 @@
                 `).join('') || `<p class="p-4 text-xs text-slate-400 text-center">Belum ada warta.</p>`;
             }
 
-            // Daftar Event di Admin
             const adminEvent = document.getElementById('admin-event-list');
             if (adminEvent) {
                 adminEvent.innerHTML = (appData.events || []).map(ev => `
@@ -1422,7 +1806,6 @@
                 `).join('') || `<p class="p-4 text-xs text-slate-400 text-center">Belum ada event.</p>`;
             }
 
-            // Daftar Dokumentasi di Admin
             const adminDoc = document.getElementById('admin-doc-list');
             if (adminDoc) {
                 adminDoc.innerHTML = (appData.docs || []).map(d => `
@@ -1440,7 +1823,7 @@
         // ==================== INISIALISASI AWAL & FIREBASE REAL-TIME ====================
 
         document.getElementById('year-now').textContent = new Date().getFullYear();
-        renderAll(); // Render data default segera agar UI langsung tampil responsif
+        renderAll();
 
         async function initFirebaseRealtime() {
             try {
@@ -1448,26 +1831,25 @@
                 const auth = getAuth(app);
                 db = getFirestore(app);
 
-                // Login anonim agar memenuhi aturan Firestore (request.auth != null)
                 await signInAnonymously(auth);
-
-                // Referensi dokumen tunggal untuk data website Remaja GKII
                 siteDocRef = doc(db, "remaja_gkii", "main_data");
 
-                // Dengarkan perubahan secara real-time
                 onSnapshot(siteDocRef, async (snapshot) => {
                     if (snapshot.exists()) {
                         const cloudData = snapshot.data();
                         appData = {
                             ...DEFAULT_DATA,
                             ...cloudData,
-                            currentTheme: { ...DEFAULT_DATA.currentTheme, ...(cloudData.currentTheme || {}) },
-                            nextTheme: { ...DEFAULT_DATA.nextTheme, ...(cloudData.nextTheme || {}) }
+                            curCombined: { ...DEFAULT_DATA.curCombined, ...(cloudData.curCombined || {}) },
+                            curTurem: { ...DEFAULT_DATA.curTurem, ...(cloudData.curTurem || {}) },
+                            curKorem: { ...DEFAULT_DATA.curKorem, ...(cloudData.curKorem || {}) },
+                            nextCombined: { ...DEFAULT_DATA.nextCombined, ...(cloudData.nextCombined || {}) },
+                            nextTurem: { ...DEFAULT_DATA.nextTurem, ...(cloudData.nextTurem || {}) },
+                            nextKorem: { ...DEFAULT_DATA.nextKorem, ...(cloudData.nextKorem || {}) }
                         };
                         renderAll();
                         setSyncStatus(true, "Terhubung ke Firebase Cloud");
                     } else {
-                        // Inisialisasi dokumen pertama kali di Firestore dengan data default
                         await setDoc(siteDocRef, DEFAULT_DATA);
                         setSyncStatus(true, "Terhubung ke Firebase Cloud");
                     }
