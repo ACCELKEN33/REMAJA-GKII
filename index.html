@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REMAJA GKII - Gereja Kristen Injili Indonesia</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-400 selection:text-slate-900">
+
+    <!-- ==================== 1. HEADER & NAVIGASI ==================== -->
+    <header class="sticky top-0 z-40 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 text-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo & Nama Gereja -->
+                <a href="#beranda" class="flex items-center gap-3 group">
+                    
+                    <!-- -------Logo------- (Ganti logo-remaja.png dengan nama file logomu) -->
+                    <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-500 flex items-center justify-center overflow-hidden shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform">
+                        <img src="logo REMAJA.png" alt="Logo Remaja GKII" class="w-full h-full object-contain p-1.5">
+                    </div>
+                    <!-- -------Akhir Logo------- -->
+
+                    <div>
+                        <span class="font-display font-extrabold text-xl tracking-tight text-white block leading-none">
+                            REMAJA <span class="text-amber-400">GKII</span>
+                        </span>
+                        <span class="text-[11px] text-slate-400 tracking-wider uppercase font-medium mt-1 block">
+                            Gereja Kristen Injili Indonesia
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Navigasi Desktop -->
+                <nav class="hidden md:flex items-center gap-1 lg:gap-2">
+                    <a href="#beranda" class="px-3.5 py-2 rounded-xl text-sm font-medium text-slate-200 hover:text-amber-400 hover:bg-slate-800/70 transition">Beranda</a>
+                    <a href="#tema-ibadah" class="px-3.5 py-2 rounded-xl text-sm font-medium text-slate-200 hover:text-amber-400 hover:bg-slate-800/70 transition">Tema Ibadah</a>
+                    <a href="#warta-event" class="px-3.5 py-2 rounded-xl text-sm font-medium text-slate-200 hover:text-amber-400 hover:bg-slate-800/70 transition">Warta & Event</a>
+                    <a href="#dokumentasi" class="px-3.5 py-2 rounded-xl text-sm font-medium text-slate-200 hover:text-amber-400 hover:bg-slate-800/70 transition">Dokumentasi</a>
+                    <button onclick="openAdminModal()" class="ml-3 px-4 py-2.5 rounded-xl text-sm font-bold bg-amber-400 hover:bg-amber-300 text-slate-950 shadow-sm flex items-center gap-2 transition active:scale-95">
+                        <i class="fa-solid fa-sliders"></i>
+                        <span>Admin / Update</span>
+                    </button>
+                </nav>
+
+                <!-- Tombol Mobile -->
+                <div class="flex items-center gap-2 md:hidden">
+                    <button onclick="openAdminModal()" class="px-3 py-2 rounded-xl bg-amber-400 text-slate-950 text-xs font-bold flex items-center gap-1.5" aria-label="Panel Admin">
+                        <i class="fa-solid fa-sliders"></i>
+                        <span>Admin</span>
+                    </button>
+                    <button onclick="toggleMobileMenu()" class="p-2.5 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800 transition" aria-label="Buka Menu">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dropdown Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800 px-4 pt-2 pb-5 space-y-1">
+            <a href="#beranda" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-xl text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-amber-400">Beranda</a>
+            <a href="#tema-ibadah" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-xl text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-amber-400">Tema Ibadah</a>
+            <a href="#warta-event" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-xl text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-amber-400">Warta & Event</a>
+            <a href="#dokumentasi" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-xl text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-amber-400">Dokumentasi Ibadah</a>
+        </div>
+    </header>
+
+    <!-- ==================== 2. HERO & TEMA MINGGU INI ==================== -->
+    <section id="beranda" class="relative overflow-hidden bg-slate-950 text-white py-14 sm:py-20 lg:py-24">
+        <!-- Aksen Latar Halus -->
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-indigo-900/35 via-slate-950 to-slate-950 pointer-events-none"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                
+                <!-- Kolom Kiri: Informasi Tema Minggu Ini -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-400/10 border border-amber-400/30 text-amber-300 text-xs font-bold tracking-wider uppercase">
+                        <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                        Tema Ibadah Minggu Ini
+                    </div>
+
+                    <h1 id="hero-theme-title" class="font-display font-extrabold text-3xl sm:text-5xl lg:text-[3.25rem] leading-[1.15] text-white tracking-tight">
+                        Memuat Tema...
+                    </h1>
+
+                    <div class="p-5 rounded-2xl bg-white/[0.04] border border-white/10">
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-10 h-10 rounded-xl bg-amber-400/15 text-amber-400 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-book-bible text-lg"></i>
+                            </div>
+                            <div>
+                                <p id="hero-theme-verse" class="font-display font-bold text-amber-300 text-base sm:text-lg"></p>
+                                <p id="hero-theme-desc" class="text-slate-300 text-sm sm:text-base mt-1.5 leading-relaxed"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tombol Link Dokumentasi Ibadah Minggu Ini -->
+                    <div class="flex flex-col sm:flex-row gap-3.5 pt-2">
+                        <a id="hero-doc-link" href="#dokumentasi" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-2xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-sm sm:text-base shadow-lg shadow-amber-500/20 transition">
+                            <i class="fa-solid fa-photo-film text-base"></i>
+                            <span>Link Dokumentasi Ibadah Minggu Ini</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+                        <a href="#dokumentasi" class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl bg-white/[0.06] hover:bg-white/[0.12] border border-white/10 text-white font-semibold text-sm sm:text-base transition">
+                            <i class="fa-solid fa-folder-open text-slate-300"></i>
+                            <span>Arsip Minggu Sebelumnya</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Kolom Kanan: Poster Tema & Jadwal Pelaksanaan -->
+                <div class="lg:col-span-5 space-y-5">
+                    <!-- Poster Tema Minggu Ini (dengan fallback jika kosong) -->
+                    <div id="hero-poster-container" class="rounded-3xl overflow-hidden border border-white/10 bg-slate-900 shadow-2xl">
+                        <img id="hero-poster-img" src="" alt="Poster Tema Minggu Ini" class="hidden w-full max-h-80 object-cover">
+                        <div id="hero-poster-fallback" class="p-6 bg-gradient-to-br from-indigo-900/60 via-slate-900 to-slate-900 flex items-center justify-between border-b border-white/10">
+                            <div>
+                                <p class="text-xs font-bold uppercase tracking-widest text-amber-400">Persekutuan Remaja</p>
+                                <p class="font-display font-bold text-lg text-white mt-0.5">REMAJA GKII</p>
+                            </div>
+                            <div class="w-11 h-11 rounded-2xl bg-white/10 flex items-center justify-center text-amber-300">
+                                <i class="fa-solid fa-church text-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kartu Detail Jadwal -->
+                    <div class="rounded-3xl bg-slate-900/90 border border-slate-800 p-6 sm:p-7 shadow-xl space-y-4">
+                        <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                            <h2 class="font-display font-bold text-lg text-white flex items-center gap-2">
+                                <i class="fa-regular fa-calendar-check text-amber-400"></i>
+                                Detail Ibadah
+                            </h2>
+                            <span class="px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 text-xs font-semibold">Minggu Ini</span>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 text-sm">
+                            <div class="p-3.5 rounded-2xl bg-slate-800/60 border border-slate-700/50">
+                                <span class="text-[11px] text-slate-400 uppercase tracking-wider font-semibold block">Hari & Tanggal</span>
+                                <p id="hero-date" class="text-white font-semibold mt-1"></p>
+                            </div>
+                            <div class="p-3.5 rounded-2xl bg-slate-800/60 border border-slate-700/50">
+                                <span class="text-[11px] text-slate-400 uppercase tracking-wider font-semibold block">Waktu</span>
+                                <p id="hero-time" class="text-white font-semibold mt-1"></p>
+                            </div>
+                            <div class="p-3.5 rounded-2xl bg-slate-800/60 border border-slate-700/50">
+                                <span class="text-[11px] text-slate-400 uppercase tracking-wider font-semibold block">Pembicara</span>
+                                <p id="hero-speaker" class="text-white font-semibold mt-1"></p>
+                            </div>
+                            <div class="p-3.5 rounded-2xl bg-slate-800/60 border border-slate-700/50">
+                                <span class="text-[11px] text-slate-400 uppercase tracking-wider font-semibold block">Lokasi</span>
+                                <p id="hero-location" class="text-white font-semibold mt-1"></p>
+                            </div>
+                        </div>
+
+                        <div class="pt-2 flex items-center justify-between text-xs text-slate-400">
+                            <span class="flex items-center gap-2">
+                                <span id="public-sync-dot" class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                                <span id="public-sync-text">Menghubungkan Firebase...</span>
+                            </span>
+                            <button onclick="copyShareText()" class="text-amber-400 hover:text-amber-300 font-semibold flex items-center gap-1.5 transition">
+                                <i class="fa-solid fa-share-nodes"></i> Bagikan Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 3. TEMA MINGGU DEPAN ==================== -->
+    <section id="tema-ibadah" class="py-12 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="rounded-3xl bg-white border border-slate-200/90 p-6 sm:p-10 shadow-sm">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-8 space-y-4">
+                    <div class="flex flex-wrap items-center gap-2">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-indigo-50 text-indigo-700 text-xs font-bold uppercase tracking-wider">
+                            <i class="fa-solid fa-forward"></i> Persiapan Minggu Depan
+                        </div>
+                        <span id="next-coming-soon-badge" class="hidden inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-wider">
+                            <i class="fa-regular fa-hourglass-half"></i> Coming Soon
+                        </span>
+                    </div>
+
+                    <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-slate-900">
+                        Tema Minggu Depan: <span id="next-theme-title" class="text-indigo-700"></span>
+                    </h2>
+                    <p id="next-theme-desc" class="text-slate-600 text-sm sm:text-base leading-relaxed"></p>
+                    
+                    <div id="next-theme-meta" class="flex flex-wrap items-center gap-3 pt-2 text-xs sm:text-sm">
+                        <span id="next-verse-pill" class="inline-flex items-center gap-2 bg-slate-100 text-slate-800 px-3.5 py-2 rounded-xl font-semibold">
+                            <i class="fa-solid fa-book-open text-indigo-600"></i>
+                            <span id="next-theme-verse"></span>
+                        </span>
+                        <span id="next-date-pill" class="inline-flex items-center gap-2 bg-slate-100 text-slate-800 px-3.5 py-2 rounded-xl font-medium">
+                            <i class="fa-regular fa-calendar text-indigo-600"></i>
+                            <span id="next-theme-date"></span>
+                        </span>
+                        <span id="next-speaker-pill" class="inline-flex items-center gap-2 bg-slate-100 text-slate-800 px-3.5 py-2 rounded-xl font-medium">
+                            <i class="fa-solid fa-microphone text-indigo-600"></i>
+                            <span id="next-theme-speaker"></span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Poster Minggu Depan atau Kartu Fallback -->
+                <div class="lg:col-span-4">
+                    <div id="next-poster-box" class="hidden rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+                        <img id="next-poster-img" src="" alt="Poster Tema Minggu Depan" class="w-full h-52 object-cover">
+                    </div>
+                    <div id="next-poster-fallback" class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 text-center">
+                        <div class="w-12 h-12 rounded-2xl bg-indigo-100 text-indigo-700 flex items-center justify-center mx-auto mb-3 text-xl">
+                            <i id="next-fallback-icon" class="fa-solid fa-hands-praying"></i>
+                        </div>
+                        <p id="next-fallback-title" class="font-display font-bold text-slate-900 text-base">Mari Siapkan Hati</p>
+                        <p id="next-fallback-desc" class="text-xs text-slate-500 mt-1.5 leading-relaxed">
+                            Baca perikop Alkitab minggu depan terlebih dahulu dan ajak teman remaja lainnya hadir bersama.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 4 & 5. WARTA JEMAAT & EVENT MENDATANG ==================== -->
+    <section id="warta-event" class="py-8 sm:py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+            
+            <!-- Kolom Kiri (5 Kolom): Warta Jemaat -->
+            <div class="lg:col-span-5 space-y-6">
+                <div class="flex items-center justify-between border-b border-slate-200 pb-4">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-indigo-600">Info Sepekan</span>
+                        <h2 class="font-display font-extrabold text-2xl text-slate-900 mt-0.5">Warta Jemaat Remaja</h2>
+                    </div>
+                    <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+                </div>
+
+                <div id="warta-list" class="space-y-4">
+                    <!-- Dirender oleh JS -->
+                </div>
+            </div>
+
+            <!-- Kolom Kanan (7 Kolom): Event Mendatang -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="flex items-center justify-between border-b border-slate-200 pb-4">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-amber-600">Agenda Spesial</span>
+                        <h2 class="font-display font-extrabold text-2xl text-slate-900 mt-0.5">Event Mendatang</h2>
+                    </div>
+                    <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                </div>
+
+                <div id="event-list" class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <!-- Dirender oleh JS -->
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== 6. ARSIP DOKUMENTASI IBADAH MINGGUAN ==================== -->
+    <section id="dokumentasi" class="py-14 sm:py-20 bg-slate-100/80 border-t border-slate-200/80 mt-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+                <div>
+                    <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-indigo-700 bg-indigo-100 px-3 py-1 rounded-full mb-2">
+                        <i class="fa-solid fa-camera-retro"></i> Galeri & Rekap Ibadah
+                    </span>
+                    <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-slate-900">Arsip Dokumentasi Mingguan</h2>
+                    <p class="text-slate-600 text-sm sm:text-base mt-1.5 max-w-2xl">
+                        Klik tautan di bawah untuk melihat foto, video rekap, maupun ringkasan ibadah setiap minggunya.
+                    </p>
+                </div>
+
+                <!-- Pencarian & Filter Platform -->
+                <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+                    <div class="relative flex-1 sm:w-64">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+                        <input type="text" id="doc-search" oninput="renderDocs()" placeholder="Cari tema atau tanggal..." class="w-full pl-10 pr-4 py-2.5 rounded-xl bg-white border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    </div>
+                    <select id="doc-filter" onchange="renderDocs()" class="px-4 py-2.5 rounded-xl bg-white border border-slate-300 text-sm font-medium text-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <option value="ALL">Semua Platform</option>
+                        <option value="Google Drive">Google Drive</option>
+                        <option value="YouTube">YouTube</option>
+                        <option value="Instagram">Instagram</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Grid Dokumentasi -->
+            <div id="docs-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Dirender oleh JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                
+                <!-- -------Logo------- (Ganti logo-remaja.png dengan nama file logomu) -->
+                <div class="w-10 h-10 rounded-xl bg-amber-400 flex items-center justify-center overflow-hidden">
+                    <img src="logo REMAJA.png" alt="Logo Remaja GKII" class="w-full h-full object-contain p-1">
+                </div>
+                <!-- -------Akhir Logo------- -->
+
+                <div>
+                    <p class="font-display font-bold text-white text-base">REMAJA GKII</p>
+                    <p class="text-xs text-slate-500">Gereja Kristen Injili Indonesia • Komisi Remaja</p>
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-center gap-5 text-sm">
+                <a href="#beranda" class="hover:text-amber-400 transition">Beranda</a>
+                <a href="#tema-ibadah" class="hover:text-amber-400 transition">Tema</a>
+                <a href="#warta-event" class="hover:text-amber-400 transition">Warta & Event</a>
+                <a href="#dokumentasi" class="hover:text-amber-400 transition">Dokumentasi</a>
+            </div>
+            <p class="text-xs text-slate-500">&copy; <span id="year-now"></span> Komisi Remaja GKII.</p>
+        </div>
+    </footer>
+
+    <!-- ==================== MODAL DETAIL EVENT ==================== -->
+    <div id="event-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/75 backdrop-blur-sm p-4 overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl relative my-auto">
+            <button onclick="closeEventModal()" class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-slate-900/75 hover:bg-slate-900 text-white flex items-center justify-center transition">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="modal-event-poster-box" class="hidden w-full bg-slate-100">
+                <img id="modal-event-poster" src="" alt="Poster Event" class="w-full max-h-72 object-cover">
+            </div>
+            <div class="p-6 sm:p-8">
+                <span class="inline-block px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold mb-3">AGENDA REMAJA GKII</span>
+                <h3 id="modal-event-title" class="font-display font-extrabold text-2xl text-slate-900 mb-3"></h3>
+                <div class="space-y-2 text-sm text-slate-600 mb-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                    <p><i class="fa-regular fa-calendar text-indigo-600 w-5"></i> <strong id="modal-event-date"></strong></p>
+                    <p><i class="fa-solid fa-location-dot text-rose-500 w-5"></i> <span id="modal-event-loc"></span></p>
+                </div>
+                <p id="modal-event-desc" class="text-slate-600 text-sm leading-relaxed mb-6"></p>
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <a id="modal-event-link" href="#" target="_blank" rel="noopener noreferrer" class="flex-1 text-center py-3 px-5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-sm transition">
+                        Daftar / Info Lengkap
+                    </a>
+                    <button onclick="closeEventModal()" class="py-3 px-5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-sm transition">
+                        Tutup
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== MODAL VERIFIKASI TOKEN ADMIN ==================== -->
+    <div id="token-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/80 backdrop-blur-sm p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl border border-slate-200 relative">
+            <button onclick="closeTokenModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center transition">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-xl mb-4">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3 class="font-display font-extrabold text-xl text-slate-900">Verifikasi Pengurus</h3>
+            <p class="text-sm text-slate-600 mt-1">Masukkan token khusus admin untuk mengelola konten dan mengunggah poster ibadah.</p>
+            
+            <form onsubmit="verifyAdminToken(event)" class="mt-5 space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Token Akses</label>
+                    <div class="relative">
+                        <input type="password" id="admin-token-input" required placeholder="Masukkan token..." class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <button type="button" onclick="toggleTokenVisibility()" class="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600">
+                            <i id="token-eye-icon" class="fa-regular fa-eye"></i>
+                        </button>
+                    </div>
+                    <p id="token-error-msg" class="hidden text-xs font-semibold text-rose-600 mt-2">
+                        <i class="fa-solid fa-circle-exclamation mr-1"></i> Token tidak sesuai. Akses ditolak.
+                    </p>
+                </div>
+                <button type="submit" class="w-full py-3 px-5 rounded-xl bg-slate-900 hover:bg-indigo-700 text-white font-bold text-sm shadow-sm transition">
+                    Masuk ke Panel Admin
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ==================== 7. MODAL PANEL ADMIN ==================== -->
+    <div id="admin-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/75 backdrop-blur-sm p-3 sm:p-5 overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-4xl w-full my-auto shadow-2xl overflow-hidden border border-slate-200">
+            <!-- Header Panel Admin + Indikator Status Firebase -->
+            <div class="bg-slate-900 text-white px-6 py-5 flex flex-wrap items-center justify-between gap-3">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-amber-400 text-slate-950 flex items-center justify-center">
+                        <i class="fa-solid fa-sliders"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-display font-bold text-lg">Panel Pengurus Remaja GKII</h3>
+                        <!-- Indikator Status Koneksi Firebase -->
+                        <div class="flex items-center gap-2 mt-0.5">
+                            <span id="admin-fb-dot" class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                            <span id="admin-fb-status" class="text-xs text-slate-300 font-medium">Terhubung ke Firebase Cloud</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2">
+                    <button onclick="logoutAdmin()" title="Kunci Panel Admin" class="px-3 py-2 rounded-xl bg-rose-500/20 hover:bg-rose-500/30 text-rose-300 text-xs font-bold flex items-center gap-1.5 transition">
+                        <i class="fa-solid fa-lock"></i>
+                        <span>Kunci Akses</span>
+                    </button>
+                    <button onclick="closeAdminModal()" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center justify-center transition">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tab Navigasi Admin -->
+            <div class="bg-slate-100 px-6 pt-3 border-b border-slate-200 flex gap-2 overflow-x-auto">
+                <button onclick="switchAdminTab('tab-cur-theme')" id="btn-tab-cur-theme" class="admin-tab-btn px-4 py-2.5 rounded-t-xl text-sm font-bold bg-white text-indigo-700 border-t border-x border-slate-200 shrink-0">
+                    Tema Minggu Ini
+                </button>
+                <button onclick="switchAdminTab('tab-next-theme')" id="btn-tab-next-theme" class="admin-tab-btn px-4 py-2.5 rounded-t-xl text-sm font-semibold text-slate-600 hover:text-slate-900 shrink-0">
+                    Tema Minggu Depan
+                </button>
+                <button onclick="switchAdminTab('tab-warta')" id="btn-tab-warta" class="admin-tab-btn px-4 py-2.5 rounded-t-xl text-sm font-semibold text-slate-600 hover:text-slate-900 shrink-0">
+                    Warta Jemaat
+                </button>
+                <button onclick="switchAdminTab('tab-event')" id="btn-tab-event" class="admin-tab-btn px-4 py-2.5 rounded-t-xl text-sm font-semibold text-slate-600 hover:text-slate-900 shrink-0">
+                    Event Mendatang
+                </button>
+                <button onclick="switchAdminTab('tab-dok')" id="btn-tab-dok" class="admin-tab-btn px-4 py-2.5 rounded-t-xl text-sm font-semibold text-slate-600 hover:text-slate-900 shrink-0">
+                    Arsip Dokumentasi
+                </button>
+            </div>
+
+            <!-- Konten Tab Admin -->
+            <div class="p-6 max-h-[72vh] overflow-y-auto space-y-6">
+                
+                <!-- TAB 1: TEMA MINGGU INI -->
+                <div id="tab-cur-theme" class="admin-tab-content">
+                    <form onsubmit="saveCurrentTheme(event)" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Judul Tema Minggu Ini</label>
+                                <input type="text" id="input-cur-title" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Ayat Pokok Alkitab</label>
+                                <input type="text" id="input-cur-verse" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Hari & Tanggal</label>
+                                <input type="text" id="input-cur-date" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Waktu Ibadah</label>
+                                <input type="text" id="input-cur-time" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Pembicara</label>
+                                <input type="text" id="input-cur-speaker" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Lokasi Ibadah</label>
+                                <input type="text" id="input-cur-loc" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm">
+                            </div>
+                            <div class="sm:col-span-2">
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Link Dokumentasi Ibadah Minggu Ini (GDrive / YouTube / IG)</label>
+                                <input type="url" id="input-cur-doclink" required placeholder="https://..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm">
+                            </div>
+                            <div class="sm:col-span-2 p-4 rounded-2xl bg-slate-50 border border-slate-200">
+                                <label class="block text-xs font-bold text-slate-700 mb-1.5">Unggah Poster Tema Minggu Ini (Otomatis dikompresi)</label>
+                                <div class="flex flex-wrap items-center gap-3">
+                                    <input type="file" id="input-cur-poster-file" accept="image/*" onchange="handlePosterUpload(event, 'cur')" class="text-xs text-slate-600 file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-indigo-600 file:text-white hover:file:bg-indigo-700 cursor-pointer">
+                                    <button type="button" onclick="clearPoster('cur')" id="btn-clear-cur-poster" class="hidden px-3 py-1.5 rounded-lg bg-rose-100 text-rose-700 text-xs font-semibold">Hapus Poster</button>
+                                </div>
+                                <div id="preview-cur-poster-box" class="hidden mt-3">
+                                    <img id="preview-cur-poster-img" src="" alt="Preview Poster" class="h-36 rounded-xl border border-slate-300 object-cover">
+                                </div>
+                            </div>
+                            <div class="sm:col-span-2">
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Deskripsi Singkat Tema</label>
+                                <textarea id="input-cur-desc" rows="2" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm"></textarea>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between pt-2">
+                            <button type="button" onclick="resetDefaultData()" class="px-4 py-2.5 rounded-xl text-xs font-semibold text-rose-600 hover:bg-rose-50 border border-rose-200 transition">
+                                <i class="fa-solid fa-rotate-left mr-1"></i> Reset Data Default
+                            </button>
+                            <button type="submit" class="px-6 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm shadow-sm transition">
+                                <i class="fa-solid fa-cloud-arrow-up mr-1.5"></i> Simpan Tema Minggu Ini
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- TAB 2: TEMA MINGGU DEPAN -->
+                <div id="tab-next-theme" class="admin-tab-content hidden">
+                    <form onsubmit="saveNextTheme(event)" class="space-y-4">
+                        <div class="p-3.5 rounded-2xl bg-amber-50 border border-amber-200/80 text-xs text-amber-900 flex items-start justify-between gap-3">
+                            <div class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-info text-amber-600 mt-0.5"></i>
+                                <span>Kosongkan kolom <strong>Judul Tema</strong> jika tema minggu depan belum tersedia—website otomatis menampilkan <strong>"Coming Soon"</strong>.</span>
+                            </div>
+                            <button type="button" onclick="setNextThemeComingSoon()" class="px-3 py-1.5 rounded-lg bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold shrink-0 transition">
+                                Set Coming Soon
+                            </button>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Judul Tema Minggu Depan (Kosongkan = Coming Soon)</label>
+                                <input type="text" id="input-next-title" placeholder="Contoh: Berakar dalam Kristus atau kosongkan" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Ayat Pokok (Opsional)</label>
+                                <input type="text" id="input-next-verse" placeholder="Contoh: Kolose 2:6-7" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Tanggal Minggu Depan (Opsional)</label>
+                                <input type="text" id="input-next-date" placeholder="Contoh: Minggu, 29 November 2026" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Pembicara Minggu Depan (Opsional)</label>
+                                <input type="text" id="input-next-speaker" placeholder="Contoh: Ev. Yohanes Wijaya" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm">
+                            </div>
+                            <div class="sm:col-span-2 p-4 rounded-2xl bg-slate-50 border border-slate-200">
+                                <label class="block text-xs font-bold text-slate-700 mb-1.5">Unggah Poster Tema Minggu Depan (Otomatis dikompresi)</label>
+                                <div class="flex flex-wrap items-center gap-3">
+                                    <input type="file" id="input-next-poster-file" accept="image/*" onchange="handlePosterUpload(event, 'next')" class="text-xs text-slate-600 file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-amber-400 file:text-slate-950 hover:file:bg-amber-300 cursor-pointer">
+                                    <button type="button" onclick="clearPoster('next')" id="btn-clear-next-poster" class="hidden px-3 py-1.5 rounded-lg bg-rose-100 text-rose-700 text-xs font-semibold">Hapus Poster</button>
+                                </div>
+                                <div id="preview-next-poster-box" class="hidden mt-3">
+                                    <img id="preview-next-poster-img" src="" alt="Preview Poster Minggu Depan" class="h-36 rounded-xl border border-slate-300 object-cover">
+                                </div>
+                            </div>
+                            <div class="sm:col-span-2">
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Deskripsi Persiapan (Opsional)</label>
+                                <textarea id="input-next-desc" rows="2" placeholder="Catatan atau ajakan persiapan untuk jemaat remaja..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm"></textarea>
+                            </div>
+                        </div>
+                        <div class="text-right pt-2">
+                            <button type="submit" class="px-6 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm shadow-sm transition">
+                                <i class="fa-solid fa-cloud-arrow-up mr-1.5"></i> Simpan Tema Minggu Depan
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- TAB 3: WARTA JEMAAT -->
+                <div id="tab-warta" class="admin-tab-content hidden space-y-6">
+                    <form onsubmit="addWarta(event)" class="p-4 rounded-2xl bg-slate-50 border border-slate-200 grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        <input type="text" id="new-warta-category" placeholder="Kategori (mis: Latihan Musik)" required class="px-3.5 py-2 rounded-xl border border-slate-300 text-sm bg-white">
+                        <input type="text" id="new-warta-title" placeholder="Judul Pengumuman" required class="px-3.5 py-2 rounded-xl border border-slate-300 text-sm bg-white">
+                        <input type="text" id="new-warta-info" placeholder="Jadwal / Info Singkat" required class="px-3.5 py-2 rounded-xl border border-slate-300 text-sm bg-white">
+                        <textarea id="new-warta-detail" rows="2" placeholder="Isi detail warta..." required class="sm:col-span-3 px-3.5 py-2 rounded-xl border border-slate-300 text-sm bg-white"></textarea>
+                        <div class="sm:col-span-3 text-right">
+                            <button type="submit" class="px-5 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-sm">+ Tambah Warta</button>
+                        </div>
+                    </form>
+                    <div id="admin-warta-list" class="divide-y divide-slate-200 border border-slate-200 rounded-2xl overflow-hidden bg-white"></div>
+                </div>
+
+                <!-- TAB 4: EVENT MENDATANG -->
+                <div id="tab-event" class="admin-tab-content hidden space-y-6">
+                    <form onsubmit="addEvent(event)" class="p-4 rounded-2xl bg-slate-50 border border-slate-200 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <input type="text" id="new-event-title" placeholder="Nama Event (mis: Youth Camp 2026)" required class="px-3.5 py-2 rounded-xl border border-slate-300 text-sm bg-white">
+                        <input type="text" id="new-event-date" placeholder="Tanggal Acara" required class="px-3.5 py-2 rounded-xl border border-slate-300 text-sm bg-white">
+                        <input type="text" id="new-event-loc" placeholder="Lokasi Acara" required class="px-3.5 py-2 rounded-xl border border-slate-300 text-sm bg-white">
+                        <input type="url" id="new-event-link" placeholder="Link Pendaftaran / WA (https://...)" required class="px-3.5 py-2 rounded-xl border border-slate-300 text-sm bg-white">
+                        <div class="sm:col-span-2">
+                            <label class="block text-xs font-bold text-slate-700 mb-1">Unggah Poster Event (Opsional)</label>
+                            <div class="flex flex-wrap items-center gap-3">
+                                <input type="file" id="new-event-poster-file" accept="image/*" onchange="handlePosterUpload(event, 'event')" class="text-xs text-slate-600 file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-amber-400 file:text-slate-950 hover:file:bg-amber-300 cursor-pointer">
+                                <button type="button" onclick="clearPoster('event')" id="btn-clear-event-poster" class="hidden px-3 py-1.5 rounded-lg bg-rose-100 text-rose-700 text-xs font-semibold">Hapus Poster</button>
+                            </div>
+                            <div id="preview-event-poster-box" class="hidden mt-2">
+                                <img id="preview-event-poster-img" src="" alt="Preview Poster Event" class="h-28 rounded-xl border border-slate-300 object-cover">
+                            </div>
+                        </div>
+                        <textarea id="new-event-desc" rows="2" placeholder="Deskripsi lengkap acara..." required class="sm:col-span-2 px-3.5 py-2 rounded-xl border border-slate-300 text-sm bg-white"></textarea>
+                        <div class="sm:col-span-2 text-right">
+                            <button type="submit" class="px-5 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-sm">+ Tambah Event</button>
+                        </div>
+                    </form>
+                    <div id="admin-event-list" class="divide-y divide-slate-200 border border-slate-200 rounded-2xl overflow-hidden bg-white"></div>
+                </div>
+
+                <!-- TAB 5: ARSIP DOKUMENTASI -->
+                <div id="tab-dok" class="admin-tab-content hidden space-y-6">
+                    <form onsubmit="addDocArchive(event)" class="p-4 rounded-2xl bg-slate-50 border border-slate-200 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <input type="text" id="new-doc-theme" placeholder="Tema Ibadah Minggu Itu" required class="px-3.5 py-2 rounded-xl border border-slate-300 text-sm bg-white">
+                        <input type="text" id="new-doc-date" placeholder="Tanggal Ibadah (mis: 15 Nov 2026)" required class="px-3.5 py-2 rounded-xl border border-slate-300 text-sm bg-white">
+                        <input type="text" id="new-doc-verse" placeholder="Ayat Pokok (mis: 1 Timotius 4:12)" required class="px-3.5 py-2 rounded-xl border border-slate-300 text-sm bg-white">
+                        <select id="new-doc-platform" class="px-3.5 py-2 rounded-xl border border-slate-300 text-sm bg-white">
+                            <option value="Google Drive">Google Drive (Foto & Video)</option>
+                            <option value="YouTube">YouTube (Rekaman Ibadah)</option>
+                            <option value="Instagram">Instagram (Reels / Highlight)</option>
+                        </select>
+                        <input type="url" id="new-doc-url" placeholder="URL Link Dokumentasi (https://...)" required class="sm:col-span-2 px-3.5 py-2 rounded-xl border border-slate-300 text-sm bg-white">
+                        <div class="sm:col-span-2 text-right">
+                            <button type="submit" class="px-5 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-sm">+ Simpan Dokumentasi</button>
+                        </div>
+                    </form>
+                    <div id="admin-doc-list" class="divide-y divide-slate-200 border border-slate-200 rounded-2xl overflow-hidden bg-white"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== TOAST NOTIFICATION ==================== -->
+    <div id="toast" class="fixed bottom-5 right-5 z-50 hidden items-center gap-3 px-5 py-3.5 rounded-2xl bg-slate-900 text-white text-sm font-medium shadow-xl border border-slate-700">
+        <i class="fa-solid fa-circle-check text-emerald-400 text-lg"></i>
+        <span id="toast-msg">Berhasil disimpan!</span>
+    </div>
+
+    <!-- ==================== JAVASCRIPT & FIREBASE MODULE ==================== -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, doc, setDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        // 1. TOKEN TETAP ADMIN (Hanya dapat diubah langsung di kode ini)
+        const FIXED_ADMIN_TOKEN = "GKII-ADMIN-2026";
+
+        // 2. KONFIGURASI FIREBASE REMAJA GKII
+        const firebaseConfig = {
+            apiKey: "AIzaSyCwhJYx0IgBsu1xQ7mLyL3tX13AYqnT6kk",
+            authDomain: "remaja-gkii.firebaseapp.com",
+            databaseURL: "https://remaja-gkii-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "remaja-gkii",
+            storageBucket: "remaja-gkii.firebasestorage.app",
+            messagingSenderId: "973527764006",
+            appId: "1:973527764006:web:49cbc47b341fe0f2efaae7",
+            measurementId: "G-S7J47B83VV"
+        };
+
+        // 3. DATA DEFAULT AWAL (Digunakan jika Firestore masih kosong)
+        const DEFAULT_DATA = {
+            currentTheme: {
+                title: "Menjadi Teladan di Masa Muda",
+                verse: "1 Timotius 4:12",
+                desc: "Jangan seorang pun menganggap engkau rendah karena engkau muda. Jadilah teladan bagi orang-orang percaya dalam perkataan, tingkah laku, kasih, kesetiaan, dan kesucian.",
+                date: "Minggu, 22 November 2026",
+                time: "10.00 WIB - Selesai",
+                speaker: "Pdt. Samuel Pratama, M.Th",
+                location: "Ruang Ibadah Remaja Lt. 2, GKII",
+                docLink: "https://drive.google.com",
+                poster: ""
+            },
+            nextTheme: {
+                title: "",
+                verse: "",
+                desc: "",
+                date: "",
+                speaker: "",
+                poster: ""
+            },
+            warta: [
+                {
+                    id: "w1",
+                    category: "Latihan Pelayanan",
+                    title: "Latihan Musik & Multimedia",
+                    info: "Sabtu, 16.00 WIB",
+                    detail: "Seluruh tim musik, singer, dan operator LCD wajib hadir tepat waktu di ruang remaja."
+                },
+                {
+                    id: "w2",
+                    category: "Persekutuan",
+                    title: "Kelompok Tumbuh Bersama (KTB)",
+                    info: "Rabu, 19.00 WIB",
+                    detail: "Sharing firman dan doa syafaat bersama kakak pembina kelompok masing-masing."
+                },
+                {
+                    id: "w3",
+                    category: "Diakonia",
+                    title: "Kunjungan Kasih Remaja",
+                    info: "Minggu Depan",
+                    detail: "Mari ambil bagian dalam pelayanan kasih mengunjungi rekan remaja yang sedang sakit."
+                }
+            ],
+            events: [
+                {
+                    id: "e1",
+                    title: "Youth Camp GKII 2026: Unshakable",
+                    date: "18 - 20 Desember 2026",
+                    location: "Villa Bukit Indah, Puncak",
+                    desc: "Retret akhir tahun khusus remaja GKII untuk mempererat persaudaraan, pemulihan rohani, dan pembekalan pemimpin muda.",
+                    link: "https://wa.me/6281234567890",
+                    poster: ""
+                },
+                {
+                    id: "e2",
+                    title: "Ibadah Padang & Outbound",
+                    date: "10 Januari 2027",
+                    location: "Taman Wisata Alam",
+                    desc: "Ibadah syukur awal tahun di alam terbuka dilanjutkan dengan permainan kekompakan kelompok remaja.",
+                    link: "https://wa.me/6281234567890",
+                    poster: ""
+                }
+            ],
+            docs: [
+                {
+                    id: "d1",
+                    theme: "Menjadi Teladan di Masa Muda",
+                    date: "22 Nov 2026",
+                    verse: "1 Timotius 4:12",
+                    platform: "Google Drive",
+                    url: "https://drive.google.com"
+                },
+                {
+                    id: "d2",
+                    theme: "Iman yang Mengalahkan Dunia",
+                    date: "15 Nov 2026",
+                    verse: "1 Yohanes 5:4",
+                    platform: "YouTube",
+                    url: "https://youtube.com"
+                },
+                {
+                    id: "d3",
+                    theme: "Hidup Dipimpin oleh Roh",
+                    date: "08 Nov 2026",
+                    verse: "Galatia 5:25",
+                    platform: "Instagram",
+                    url: "https://instagram.com"
+                }
+            ]
+        };
+
+        // State Aplikasi
+        let appData = JSON.parse(JSON.stringify(DEFAULT_DATA));
+        let isAdminAuthenticated = sessionStorage.getItem('remaja_gkii_admin_auth') === 'true';
+        let pendingPosters = { cur: "", next: "", event: "" };
+        let db = null;
+        let siteDocRef = null;
+
+        // ==================== FUNGSI UTILITAS UI & KOMPRESI GAMBAR ====================
+
+        function isNextThemeEmpty(nxt) {
+            const title = (nxt?.title || '').trim().toLowerCase();
+            return !title || title === 'coming soon' || title === '-';
+        }
+
+        function setSyncStatus(isConnected, text) {
+            const publicDot = document.getElementById('public-sync-dot');
+            const publicText = document.getElementById('public-sync-text');
+            const adminDot = document.getElementById('admin-fb-dot');
+            const adminText = document.getElementById('admin-fb-status');
+
+            if (publicDot && publicText) {
+                publicDot.className = isConnected
+                    ? "w-2 h-2 rounded-full bg-emerald-400"
+                    : "w-2 h-2 rounded-full bg-amber-400 animate-pulse";
+                publicText.textContent = text;
+            }
+            if (adminDot && adminText) {
+                adminDot.className = isConnected
+                    ? "w-2 h-2 rounded-full bg-emerald-400"
+                    : "w-2 h-2 rounded-full bg-amber-400 animate-pulse";
+                adminText.textContent = text;
+            }
+        }
+
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toast-msg').textContent = msg;
+            toast.classList.remove('hidden');
+            toast.classList.add('flex');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+                toast.classList.remove('flex');
+            }, 3200);
+        }
+
+        // Kompresi gambar menggunakan HTML5 Canvas (Max width 800px, JPEG 0.75)
+        function compressImageToBase64(file) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = (event) => {
+                    const img = new Image();
+                    img.onload = () => {
+                        const MAX_WIDTH = 800;
+                        let width = img.width;
+                        let height = img.height;
+
+                        if (width > MAX_WIDTH) {
+                            height = Math.round((height * MAX_WIDTH) / width);
+                            width = MAX_WIDTH;
+                        }
+
+                        const canvas = document.createElement('canvas');
+                        canvas.width = width;
+                        canvas.height = height;
+                        const ctx = canvas.getContext('2d');
+                        ctx.drawImage(img, 0, 0, width, height);
+
+                        const compressedDataUrl = canvas.toDataURL('image/jpeg', 0.75);
+                        resolve(compressedDataUrl);
+                    };
+                    img.onerror = reject;
+                    img.src = event.target.result;
+                };
+                reader.onerror = reject;
+                reader.readAsDataURL(file);
+            });
+        }
+
+        function updatePosterPreviewUI(type, base64Str) {
+            const box = document.getElementById(`preview-${type}-poster-box`);
+            const img = document.getElementById(`preview-${type}-poster-img`);
+            const btn = document.getElementById(`btn-clear-${type}-poster`);
+            if (!box || !img || !btn) return;
+
+            if (base64Str) {
+                img.src = base64Str;
+                box.classList.remove('hidden');
+                btn.classList.remove('hidden');
+            } else {
+                img.src = "";
+                box.classList.add('hidden');
+                btn.classList.add('hidden');
+            }
+        }
+
+        // ==================== RENDER HALAMAN PUBLIK ====================
+
+        function renderAll() {
+            renderThemes();
+            renderWarta();
+            renderEvents();
+            renderDocs();
+            if (isAdminAuthenticated) {
+                renderAdminLists();
+            }
+        }
+
+        function renderThemes() {
+            const cur = appData.currentTheme || DEFAULT_DATA.currentTheme;
+            document.getElementById('hero-theme-title').textContent = cur.title;
+            document.getElementById('hero-theme-verse').textContent = cur.verse;
+            document.getElementById('hero-theme-desc').textContent = cur.desc;
+            document.getElementById('hero-date').textContent = cur.date;
+            document.getElementById('hero-time').textContent = cur.time;
+            document.getElementById('hero-speaker').textContent = cur.speaker;
+            document.getElementById('hero-location').textContent = cur.location;
+            document.getElementById('hero-doc-link').href = cur.docLink || "#dokumentasi";
+
+            const heroImg = document.getElementById('hero-poster-img');
+            const heroFallback = document.getElementById('hero-poster-fallback');
+            if (cur.poster) {
+                heroImg.src = cur.poster;
+                heroImg.classList.remove('hidden');
+                heroFallback.classList.add('hidden');
+            } else {
+                heroImg.classList.add('hidden');
+                heroFallback.classList.remove('hidden');
+            }
+
+            const nxt = appData.nextTheme || DEFAULT_DATA.nextTheme;
+            const comingSoon = isNextThemeEmpty(nxt);
+
+            const comingSoonBadge = document.getElementById('next-coming-soon-badge');
+            const nextTitleEl = document.getElementById('next-theme-title');
+            const nextDescEl = document.getElementById('next-theme-desc');
+            const nextMetaEl = document.getElementById('next-theme-meta');
+            const fallbackIcon = document.getElementById('next-fallback-icon');
+            const fallbackTitle = document.getElementById('next-fallback-title');
+            const fallbackDesc = document.getElementById('next-fallback-desc');
+
+            if (comingSoon) {
+                comingSoonBadge.classList.remove('hidden');
+                nextTitleEl.textContent = "Coming Soon";
+                nextDescEl.textContent = (nxt.desc || '').trim() || "Tema ibadah untuk minggu depan sedang dipersiapkan oleh tim pelayanan. Nantikan informasi terbarunya!";
+                nextMetaEl.classList.add('hidden');
+                fallbackIcon.className = "fa-regular fa-hourglass-half";
+                fallbackTitle.textContent = "Coming Soon";
+                fallbackDesc.textContent = "Detail ayat, pembicara, dan jadwal minggu depan akan segera diumumkan.";
+            } else {
+                comingSoonBadge.classList.add('hidden');
+                nextTitleEl.textContent = nxt.title;
+                nextDescEl.textContent = (nxt.desc || '').trim() || "Mari siapkan hati untuk firman Tuhan minggu depan.";
+                nextMetaEl.classList.remove('hidden');
+
+                const versePill = document.getElementById('next-verse-pill');
+                const datePill = document.getElementById('next-date-pill');
+                const speakerPill = document.getElementById('next-speaker-pill');
+
+                if ((nxt.verse || '').trim()) {
+                    document.getElementById('next-theme-verse').textContent = nxt.verse;
+                    versePill.classList.remove('hidden');
+                } else {
+                    versePill.classList.add('hidden');
+                }
+
+                if ((nxt.date || '').trim()) {
+                    document.getElementById('next-theme-date').textContent = nxt.date;
+                    datePill.classList.remove('hidden');
+                } else {
+                    datePill.classList.add('hidden');
+                }
+
+                if ((nxt.speaker || '').trim()) {
+                    document.getElementById('next-theme-speaker').textContent = nxt.speaker;
+                    speakerPill.classList.remove('hidden');
+                } else {
+                    speakerPill.classList.add('hidden');
+                }
+
+                fallbackIcon.className = "fa-solid fa-hands-praying";
+                fallbackTitle.textContent = "Mari Siapkan Hati";
+                fallbackDesc.textContent = "Baca perikop Alkitab minggu depan terlebih dahulu dan ajak teman remaja lainnya hadir bersama.";
+            }
+
+            const nextBox = document.getElementById('next-poster-box');
+            const nextImg = document.getElementById('next-poster-img');
+            const nextFallback = document.getElementById('next-poster-fallback');
+            if (nxt.poster) {
+                nextImg.src = nxt.poster;
+                nextBox.classList.remove('hidden');
+                nextFallback.classList.add('hidden');
+            } else {
+                nextBox.classList.add('hidden');
+                nextFallback.classList.remove('hidden');
+            }
+        }
+
+        function renderWarta() {
+            const container = document.getElementById('warta-list');
+            const list = appData.warta || [];
+            if (list.length === 0) {
+                container.innerHTML = `<div class="p-6 rounded-2xl bg-white border border-slate-200 text-sm text-slate-500 text-center">Belum ada warta jemaat minggu ini.</div>`;
+                return;
+            }
+            container.innerHTML = list.map(item => `
+                <div class="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-sm hover:border-indigo-300 transition">
+                    <div class="flex items-center justify-between gap-2 mb-2">
+                        <span class="px-2.5 py-1 rounded-lg bg-indigo-50 text-indigo-700 text-[11px] font-bold uppercase tracking-wider">${item.category}</span>
+                        <span class="text-xs font-semibold text-slate-500"><i class="fa-regular fa-clock mr-1"></i>${item.info}</span>
+                    </div>
+                    <h3 class="font-display font-bold text-base text-slate-900">${item.title}</h3>
+                    <p class="text-sm text-slate-600 mt-1.5 leading-relaxed">${item.detail}</p>
+                </div>
+            `).join('');
+        }
+
+        function renderEvents() {
+            const container = document.getElementById('event-list');
+            const list = appData.events || [];
+            if (list.length === 0) {
+                container.innerHTML = `<div class="sm:col-span-2 p-6 rounded-2xl bg-white border border-slate-200 text-sm text-slate-500 text-center">Belum ada agenda event mendatang.</div>`;
+                return;
+            }
+            container.innerHTML = list.map(ev => `
+                <div class="rounded-2xl bg-white border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        ${ev.poster
+                            ? `<img src="${ev.poster}" alt="${ev.title}" class="w-full h-44 object-cover border-b border-slate-100">`
+                            : `<div class="h-32 bg-gradient-to-br from-slate-900 to-indigo-950 p-5 flex items-end justify-between text-white">
+                                   <span class="px-2.5 py-1 rounded-lg bg-amber-400 text-slate-950 text-[11px] font-bold">EVENT REMAJA</span>
+                                   <i class="fa-solid fa-calendar-star text-2xl text-amber-400/80"></i>
+                               </div>`
+                        }
+                        <div class="p-5">
+                            <p class="text-xs font-bold text-indigo-600 mb-1"><i class="fa-regular fa-calendar mr-1"></i> ${ev.date}</p>
+                            <h3 class="font-display font-bold text-lg text-slate-900 leading-snug">${ev.title}</h3>
+                            <p class="text-xs text-slate-500 mt-1.5"><i class="fa-solid fa-location-dot text-rose-500 mr-1"></i> ${ev.location}</p>
+                            <p class="text-sm text-slate-600 mt-3 line-clamp-2">${ev.desc}</p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2">
+                        <button onclick="openEventModal('${ev.id}')" class="w-full py-2.5 px-4 rounded-xl bg-slate-900 hover:bg-indigo-700 text-white text-xs font-bold transition">
+                            Detail & Pendaftaran
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        window.renderDocs = function() {
+            const container = document.getElementById('docs-grid');
+            const query = (document.getElementById('doc-search')?.value || '').toLowerCase();
+            const filter = document.getElementById('doc-filter')?.value || 'ALL';
+
+            const filtered = (appData.docs || []).filter(d => {
+                const matchText = d.theme.toLowerCase().includes(query) || d.date.toLowerCase().includes(query) || d.verse.toLowerCase().includes(query);
+                const matchPlatform = filter === 'ALL' || d.platform === filter;
+                return matchText && matchPlatform;
+            });
+
+            if (filtered.length === 0) {
+                container.innerHTML = `<div class="md:col-span-2 lg:col-span-3 p-8 rounded-2xl bg-white border border-slate-200 text-center text-sm text-slate-500">Tidak ditemukan dokumentasi yang sesuai.</div>`;
+                return;
+            }
+
+            container.innerHTML = filtered.map(docItem => {
+                let badgeClass = "bg-indigo-50 text-indigo-700";
+                let iconClass = "fa-brands fa-google-drive";
+                if (docItem.platform === "YouTube") {
+                    badgeClass = "bg-rose-50 text-rose-700";
+                    iconClass = "fa-brands fa-youtube";
+                } else if (docItem.platform === "Instagram") {
+                    badgeClass = "bg-fuchsia-50 text-fuchsia-700";
+                    iconClass = "fa-brands fa-instagram";
+                }
+
+                return `
+                    <div class="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-sm hover:border-indigo-300 transition flex flex-col justify-between gap-4">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-3">
+                                <span class="text-xs font-semibold text-slate-500"><i class="fa-regular fa-calendar mr-1"></i>${docItem.date}</span>
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg ${badgeClass} text-xs font-bold">
+                                    <i class="${iconClass}"></i> ${docItem.platform}
+                                </span>
+                            </div>
+                            <h3 class="font-display font-bold text-lg text-slate-900 leading-snug">${docItem.theme}</h3>
+                            <p class="text-xs font-semibold text-amber-600 mt-1.5"><i class="fa-solid fa-book-bible mr-1"></i>${docItem.verse}</p>
+                        </div>
+                        <a href="${docItem.url}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl bg-slate-100 hover:bg-indigo-600 text-slate-800 hover:text-white text-xs font-bold transition">
+                            <span>Buka Dokumentasi</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                `;
+            }).join('');
+        };
+
+        // ==================== PENYIMPANAN KE FIRESTORE ====================
+
+        async function saveDataToCloud() {
+            if (!siteDocRef) {
+                showToast("Firebase belum siap, coba beberapa saat lagi.");
+                return;
+            }
+            setSyncStatus(false, "Menyinkronkan...");
+            try {
+                await setDoc(siteDocRef, appData);
+                setSyncStatus(true, "Terhubung ke Firebase Cloud");
+                showToast("Perubahan berhasil disimpan ke Firebase!");
+            } catch (err) {
+                console.error("Gagal menyimpan ke Firestore:", err);
+                setSyncStatus(false, "Gagal menyimpan ke cloud");
+                showToast("Gagal menyimpan: pastikan Firestore Rules sudah dipublish.");
+            }
+        }
+
+        // ==================== KONTROL GLOBAL (WINDOW HANDLERS) ====================
+
+        window.toggleMobileMenu = function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        };
+
+        window.copyShareText = function() {
+            const cur = appData.currentTheme;
+            const text = `Shalom Remaja GKII! Mari hadir di Ibadah Minggu Ini:\nTema: "${cur.title}" (${cur.verse})\nWaktu: ${cur.date}, ${cur.time}\nLokasi: ${cur.location}\nDokumentasi: ${cur.docLink}`;
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+            showToast("Info ibadah berhasil disalin!");
+        };
+
+        window.openEventModal = function(eventId) {
+            const ev = (appData.events || []).find(item => item.id === eventId);
+            if (!ev) return;
+
+            document.getElementById('modal-event-title').textContent = ev.title;
+            document.getElementById('modal-event-date').textContent = ev.date;
+            document.getElementById('modal-event-loc').textContent = ev.location;
+            document.getElementById('modal-event-desc').textContent = ev.desc;
+            document.getElementById('modal-event-link').href = ev.link || "#";
+
+            const posterBox = document.getElementById('modal-event-poster-box');
+            const posterImg = document.getElementById('modal-event-poster');
+            if (ev.poster) {
+                posterImg.src = ev.poster;
+                posterBox.classList.remove('hidden');
+            } else {
+                posterBox.classList.add('hidden');
+            }
+
+            const modal = document.getElementById('event-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        };
+
+        window.closeEventModal = function() {
+            const modal = document.getElementById('event-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        };
+
+        // Autentikasi Token Admin
+        window.openAdminModal = function() {
+            if (isAdminAuthenticated) {
+                launchAdminDashboard();
+            } else {
+                document.getElementById('admin-token-input').value = '';
+                document.getElementById('token-error-msg').classList.add('hidden');
+                const modal = document.getElementById('token-modal');
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+            }
+        };
+
+        window.closeTokenModal = function() {
+            const modal = document.getElementById('token-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        };
+
+        window.toggleTokenVisibility = function() {
+            const input = document.getElementById('admin-token-input');
+            const icon = document.getElementById('token-eye-icon');
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.className = 'fa-regular fa-eye-slash';
+            } else {
+                input.type = 'password';
+                icon.className = 'fa-regular fa-eye';
+            }
+        };
+
+        window.verifyAdminToken = function(e) {
+            e.preventDefault();
+            const entered = document.getElementById('admin-token-input').value.trim();
+            if (entered === FIXED_ADMIN_TOKEN) {
+                isAdminAuthenticated = true;
+                sessionStorage.setItem('remaja_gkii_admin_auth', 'true');
+                closeTokenModal();
+                launchAdminDashboard();
+                showToast("Akses admin terverifikasi!");
+            } else {
+                document.getElementById('token-error-msg').classList.remove('hidden');
+            }
+        };
+
+        window.logoutAdmin = function() {
+            isAdminAuthenticated = false;
+            sessionStorage.removeItem('remaja_gkii_admin_auth');
+            closeAdminModal();
+            showToast("Panel admin dikunci.");
+        };
+
+        function launchAdminDashboard() {
+            const cur = appData.currentTheme;
+            document.getElementById('input-cur-title').value = cur.title;
+            document.getElementById('input-cur-verse').value = cur.verse;
+            document.getElementById('input-cur-date').value = cur.date;
+            document.getElementById('input-cur-time').value = cur.time;
+            document.getElementById('input-cur-speaker').value = cur.speaker;
+            document.getElementById('input-cur-loc').value = cur.location;
+            document.getElementById('input-cur-doclink').value = cur.docLink;
+            document.getElementById('input-cur-desc').value = cur.desc;
+            pendingPosters.cur = cur.poster || "";
+            updatePosterPreviewUI('cur', pendingPosters.cur);
+
+            const nxt = appData.nextTheme;
+            document.getElementById('input-next-title').value = isNextThemeEmpty(nxt) ? "" : nxt.title;
+            document.getElementById('input-next-verse').value = nxt.verse || "";
+            document.getElementById('input-next-date').value = nxt.date || "";
+            document.getElementById('input-next-speaker').value = nxt.speaker || "";
+            document.getElementById('input-next-desc').value = nxt.desc || "";
+            pendingPosters.next = nxt.poster || "";
+            updatePosterPreviewUI('next', pendingPosters.next);
+
+            renderAdminLists();
+            const modal = document.getElementById('admin-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        window.closeAdminModal = function() {
+            const modal = document.getElementById('admin-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        };
+
+        window.switchAdminTab = function(tabId) {
+            document.querySelectorAll('.admin-tab-content').forEach(el => el.classList.add('hidden'));
+            document.getElementById(tabId).classList.remove('hidden');
+
+            document.querySelectorAll('.admin-tab-btn').forEach(btn => {
+                btn.classList.remove('bg-white', 'text-indigo-700', 'font-bold', 'border-t', 'border-x', 'border-slate-200');
+                btn.classList.add('text-slate-600', 'font-semibold');
+            });
+            const active = document.getElementById('btn-' + tabId);
+            active.classList.add('bg-white', 'text-indigo-700', 'font-bold', 'border-t', 'border-x', 'border-slate-200');
+            active.classList.remove('text-slate-600', 'font-semibold');
+        };
+
+        // Upload & Kompresi Poster
+        window.handlePosterUpload = async function(event, type) {
+            const file = event.target.files?.[0];
+            if (!file) return;
+            try {
+                showToast("Mengompresi poster...");
+                const compressedBase64 = await compressImageToBase64(file);
+                pendingPosters[type] = compressedBase64;
+                updatePosterPreviewUI(type, compressedBase64);
+                showToast("Poster siap disimpan!");
+            } catch (err) {
+                console.error(err);
+                showToast("Gagal memproses gambar poster.");
+            }
+        };
+
+        window.clearPoster = function(type) {
+            pendingPosters[type] = "";
+            updatePosterPreviewUI(type, "");
+            const fileInputMap = {
+                cur: 'input-cur-poster-file',
+                next: 'input-next-poster-file',
+                event: 'new-event-poster-file'
+            };
+            const inputEl = document.getElementById(fileInputMap[type]);
+            if (inputEl) inputEl.value = '';
+        };
+
+        // Simpan Tema Minggu Ini
+        window.saveCurrentTheme = async function(e) {
+            e.preventDefault();
+            if (!isAdminAuthenticated) return;
+
+            appData.currentTheme = {
+                title: document.getElementById('input-cur-title').value,
+                verse: document.getElementById('input-cur-verse').value,
+                date: document.getElementById('input-cur-date').value,
+                time: document.getElementById('input-cur-time').value,
+                speaker: document.getElementById('input-cur-speaker').value,
+                location: document.getElementById('input-cur-loc').value,
+                docLink: document.getElementById('input-cur-doclink').value,
+                desc: document.getElementById('input-cur-desc').value,
+                poster: pendingPosters.cur
+            };
+            renderThemes();
+            await saveDataToCloud();
+        };
+
+        // Kosongkan field Tema Minggu Depan agar otomatis jadi Coming Soon
+        window.setNextThemeComingSoon = function() {
+            document.getElementById('input-next-title').value = "";
+            document.getElementById('input-next-verse').value = "";
+            document.getElementById('input-next-date').value = "";
+            document.getElementById('input-next-speaker').value = "";
+            document.getElementById('input-next-desc').value = "";
+            clearPoster('next');
+            showToast("Field dikosongkan. Klik 'Simpan Tema Minggu Depan' untuk terapkan Coming Soon.");
+        };
+
+        // Simpan Tema Minggu Depan
+        window.saveNextTheme = async function(e) {
+            e.preventDefault();
+            if (!isAdminAuthenticated) return;
+
+            const rawTitle = document.getElementById('input-next-title').value.trim();
+            const isEmpty = !rawTitle || rawTitle.toLowerCase() === 'coming soon' || rawTitle === '-';
+
+            appData.nextTheme = {
+                title: isEmpty ? "" : rawTitle,
+                verse: document.getElementById('input-next-verse').value.trim(),
+                date: document.getElementById('input-next-date').value.trim(),
+                speaker: document.getElementById('input-next-speaker').value.trim(),
+                desc: document.getElementById('input-next-desc').value.trim(),
+                poster: pendingPosters.next
+            };
+            renderThemes();
+            await saveDataToCloud();
+        };
+
+        // Kelola Warta
+        window.addWarta = async function(e) {
+            e.preventDefault();
+            if (!isAdminAuthenticated) return;
+
+            const newItem = {
+                id: 'w_' + Date.now(),
+                category: document.getElementById('new-warta-category').value,
+                title: document.getElementById('new-warta-title').value,
+                info: document.getElementById('new-warta-info').value,
+                detail: document.getElementById('new-warta-detail').value
+            };
+            appData.warta = [newItem, ...(appData.warta || [])];
+            e.target.reset();
+            renderWarta();
+            renderAdminLists();
+            await saveDataToCloud();
+        };
+
+        window.deleteWarta = async function(id) {
+            if (!isAdminAuthenticated) return;
+            appData.warta = (appData.warta || []).filter(item => item.id !== id);
+            renderWarta();
+            renderAdminLists();
+            await saveDataToCloud();
+        };
+
+        // Kelola Event
+        window.addEvent = async function(e) {
+            e.preventDefault();
+            if (!isAdminAuthenticated) return;
+
+            const newEv = {
+                id: 'e_' + Date.now(),
+                title: document.getElementById('new-event-title').value,
+                date: document.getElementById('new-event-date').value,
+                location: document.getElementById('new-event-loc').value,
+                link: document.getElementById('new-event-link').value,
+                desc: document.getElementById('new-event-desc').value,
+                poster: pendingPosters.event
+            };
+            appData.events = [newEv, ...(appData.events || [])];
+            e.target.reset();
+            clearPoster('event');
+            renderEvents();
+            renderAdminLists();
+            await saveDataToCloud();
+        };
+
+        window.deleteEvent = async function(id) {
+            if (!isAdminAuthenticated) return;
+            appData.events = (appData.events || []).filter(item => item.id !== id);
+            renderEvents();
+            renderAdminLists();
+            await saveDataToCloud();
+        };
+
+        // Kelola Arsip Dokumentasi
+        window.addDocArchive = async function(e) {
+            e.preventDefault();
+            if (!isAdminAuthenticated) return;
+
+            const newDoc = {
+                id: 'd_' + Date.now(),
+                theme: document.getElementById('new-doc-theme').value,
+                date: document.getElementById('new-doc-date').value,
+                verse: document.getElementById('new-doc-verse').value,
+                platform: document.getElementById('new-doc-platform').value,
+                url: document.getElementById('new-doc-url').value
+            };
+            appData.docs = [newDoc, ...(appData.docs || [])];
+            e.target.reset();
+            renderDocs();
+            renderAdminLists();
+            await saveDataToCloud();
+        };
+
+        window.deleteDocArchive = async function(id) {
+            if (!isAdminAuthenticated) return;
+            appData.docs = (appData.docs || []).filter(item => item.id !== id);
+            renderDocs();
+            renderAdminLists();
+            await saveDataToCloud();
+        };
+
+        window.resetDefaultData = async function() {
+            if (!isAdminAuthenticated) return;
+            appData = JSON.parse(JSON.stringify(DEFAULT_DATA));
+            renderAll();
+            launchAdminDashboard();
+            await saveDataToCloud();
+        };
+
+        function renderAdminLists() {
+            // Daftar Warta di Admin
+            const adminWarta = document.getElementById('admin-warta-list');
+            if (adminWarta) {
+                adminWarta.innerHTML = (appData.warta || []).map(w => `
+                    <div class="p-3.5 flex items-center justify-between gap-3">
+                        <div>
+                            <span class="text-[11px] font-bold text-indigo-600 uppercase">${w.category} • ${w.info}</span>
+                            <p class="font-bold text-sm text-slate-900">${w.title}</p>
+                        </div>
+                        <button onclick="deleteWarta('${w.id}')" class="px-3 py-1.5 rounded-lg bg-rose-50 hover:bg-rose-100 text-rose-600 text-xs font-bold">Hapus</button>
+                    </div>
+                `).join('') || `<p class="p-4 text-xs text-slate-400 text-center">Belum ada warta.</p>`;
+            }
+
+            // Daftar Event di Admin
+            const adminEvent = document.getElementById('admin-event-list');
+            if (adminEvent) {
+                adminEvent.innerHTML = (appData.events || []).map(ev => `
+                    <div class="p-3.5 flex items-center justify-between gap-3">
+                        <div class="flex items-center gap-3">
+                            ${ev.poster ? `<img src="${ev.poster}" class="w-10 h-10 rounded-lg object-cover border border-slate-200">` : ''}
+                            <div>
+                                <p class="font-bold text-sm text-slate-900">${ev.title}</p>
+                                <span class="text-xs text-slate-500">${ev.date} • ${ev.location}</span>
+                            </div>
+                        </div>
+                        <button onclick="deleteEvent('${ev.id}')" class="px-3 py-1.5 rounded-lg bg-rose-50 hover:bg-rose-100 text-rose-600 text-xs font-bold">Hapus</button>
+                    </div>
+                `).join('') || `<p class="p-4 text-xs text-slate-400 text-center">Belum ada event.</p>`;
+            }
+
+            // Daftar Dokumentasi di Admin
+            const adminDoc = document.getElementById('admin-doc-list');
+            if (adminDoc) {
+                adminDoc.innerHTML = (appData.docs || []).map(d => `
+                    <div class="p-3.5 flex items-center justify-between gap-3">
+                        <div>
+                            <p class="font-bold text-sm text-slate-900">${d.theme}</p>
+                            <span class="text-xs text-slate-500">${d.date} • ${d.platform}</span>
+                        </div>
+                        <button onclick="deleteDocArchive('${d.id}')" class="px-3 py-1.5 rounded-lg bg-rose-50 hover:bg-rose-100 text-rose-600 text-xs font-bold">Hapus</button>
+                    </div>
+                `).join('') || `<p class="p-4 text-xs text-slate-400 text-center">Belum ada arsip dokumentasi.</p>`;
+            }
+        }
+
+        // ==================== INISIALISASI AWAL & FIREBASE REAL-TIME ====================
+
+        document.getElementById('year-now').textContent = new Date().getFullYear();
+        renderAll(); // Render data default segera agar UI langsung tampil responsif
+
+        async function initFirebaseRealtime() {
+            try {
+                const app = initializeApp(firebaseConfig);
+                const auth = getAuth(app);
+                db = getFirestore(app);
+
+                // Login anonim agar memenuhi aturan Firestore (request.auth != null)
+                await signInAnonymously(auth);
+
+                // Referensi dokumen tunggal untuk data website Remaja GKII
+                siteDocRef = doc(db, "remaja_gkii", "main_data");
+
+                // Dengarkan perubahan secara real-time
+                onSnapshot(siteDocRef, async (snapshot) => {
+                    if (snapshot.exists()) {
+                        const cloudData = snapshot.data();
+                        appData = {
+                            ...DEFAULT_DATA,
+                            ...cloudData,
+                            currentTheme: { ...DEFAULT_DATA.currentTheme, ...(cloudData.currentTheme || {}) },
+                            nextTheme: { ...DEFAULT_DATA.nextTheme, ...(cloudData.nextTheme || {}) }
+                        };
+                        renderAll();
+                        setSyncStatus(true, "Terhubung ke Firebase Cloud");
+                    } else {
+                        // Inisialisasi dokumen pertama kali di Firestore dengan data default
+                        await setDoc(siteDocRef, DEFAULT_DATA);
+                        setSyncStatus(true, "Terhubung ke Firebase Cloud");
+                    }
+                }, (error) => {
+                    console.error("Firestore onSnapshot error:", error);
+                    setSyncStatus(false, "Mode Offline (Cek Rules/Auth Firebase)");
+                });
+            } catch (err) {
+                console.error("Firebase init error:", err);
+                setSyncStatus(false, "Gagal terhubung ke Firebase");
+            }
+        }
+
+        initFirebaseRealtime();
+    </script>
+</body>
+</html>
