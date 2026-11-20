@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REMAJA GKII - TUREM & KOREM | Gereja Kristen Injili Indonesia</title>
     
+    <!-- Favicon Tab Browser -->
+    <link rel="icon" type="image/png" href="logo REMAJA.png">
+    
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -82,7 +85,7 @@
         <!-- Dropdown Menu Mobile -->
         <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800 px-4 pt-2 pb-5 space-y-1">
             <a href="#beranda" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-xl text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-amber-400">Minggu Ini</a>
-            <a href="#tema-minggu-depan" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-xl text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-amber-400">Tema Minggu Depan</a>
+            <a href="#tema-minggu-depan" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-xl text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-amber-400">Minggu Depan</a>
             <a href="#warta-event" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-xl text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-amber-400">Warta & Event</a>
             <a href="#dokumentasi" onclick="toggleMobileMenu()" class="block px-4 py-3 rounded-xl text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-amber-400">Dokumentasi Ibadah</a>
         </div>
@@ -417,10 +420,6 @@
                                         <img id="preview-curComb-poster-img" src="" alt="Preview Poster Gabungan" class="h-32 rounded-xl border border-slate-300 object-cover">
                                     </div>
                                 </div>
-                                <div class="sm:col-span-2">
-                                    <label class="block text-xs font-bold text-slate-700 mb-1">Deskripsi Singkat Tema</label>
-                                    <textarea id="input-cur-comb-desc" rows="2" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white"></textarea>
-                                </div>
                             </div>
                         </div>
 
@@ -473,10 +472,6 @@
                                             <img id="preview-curTurem-poster-img" src="" alt="Preview Poster TUREM" class="h-32 rounded-xl border border-slate-300 object-cover">
                                         </div>
                                     </div>
-                                    <div class="sm:col-span-2">
-                                        <label class="block text-xs font-bold text-slate-700 mb-1">Deskripsi Singkat TUREM</label>
-                                        <textarea id="input-cur-turem-desc" rows="2" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white"></textarea>
-                                    </div>
                                 </div>
                             </div>
 
@@ -526,10 +521,6 @@
                                         <div id="preview-curKorem-poster-box" class="hidden mt-3">
                                             <img id="preview-curKorem-poster-img" src="" alt="Preview Poster KOREM" class="h-32 rounded-xl border border-slate-300 object-cover">
                                         </div>
-                                    </div>
-                                    <div class="sm:col-span-2">
-                                        <label class="block text-xs font-bold text-slate-700 mb-1">Deskripsi Singkat KOREM</label>
-                                        <textarea id="input-cur-korem-desc" rows="2" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -605,10 +596,6 @@
                                         <img id="preview-nextComb-poster-img" src="" alt="Preview Poster Gabungan Minggu Depan" class="h-32 rounded-xl border border-slate-300 object-cover">
                                     </div>
                                 </div>
-                                <div class="sm:col-span-2">
-                                    <label class="block text-xs font-bold text-slate-700 mb-1">Deskripsi Persiapan (Opsional)</label>
-                                    <textarea id="input-next-comb-desc" rows="2" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white"></textarea>
-                                </div>
                             </div>
                         </div>
 
@@ -660,10 +647,6 @@
                                             <img id="preview-nextTurem-poster-img" src="" alt="Preview Poster TUREM Minggu Depan" class="h-32 rounded-xl border border-slate-300 object-cover">
                                         </div>
                                     </div>
-                                    <div class="sm:col-span-2">
-                                        <label class="block text-xs font-bold text-slate-700 mb-1">Deskripsi Persiapan TUREM (Opsional)</label>
-                                        <textarea id="input-next-turem-desc" rows="2" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white"></textarea>
-                                    </div>
                                 </div>
                             </div>
 
@@ -712,10 +695,6 @@
                                         <div id="preview-nextKorem-poster-box" class="hidden mt-3">
                                             <img id="preview-nextKorem-poster-img" src="" alt="Preview Poster KOREM Minggu Depan" class="h-32 rounded-xl border border-slate-300 object-cover">
                                         </div>
-                                    </div>
-                                    <div class="sm:col-span-2">
-                                        <label class="block text-xs font-bold text-slate-700 mb-1">Deskripsi Persiapan KOREM (Opsional)</label>
-                                        <textarea id="input-next-korem-desc" rows="2" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm bg-white"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -824,7 +803,6 @@
             curCombined: {
                 title: "Satu Hati dalam Kristus",
                 verse: "Filipi 2:2",
-                desc: "Ibadah gabungan TUREM & KOREM untuk memperkuat kebersamaan dan visi pelayanan remaja GKII.",
                 date: "Minggu, 22 November 2026",
                 time: "10.00 WIB - Selesai",
                 speaker: "Pdt. Samuel Pratama, M.Th",
@@ -833,32 +811,29 @@
                 poster: ""
             },
             curTurem: {
-                title: "Bertumbuh dalam Kebenaran",
-                verse: "1 Timotius 4:12",
-                desc: "Panggilan Tunas Remaja (TUREM) untuk belajar mengenal firman Tuhan dan menjadi teladan sejak dini.",
+                title: "Available to Serve",
+                verse: "Lukas 17:7-10",
                 date: "Minggu, 22 November 2026",
-                time: "08.00 WIB - Selesai",
-                speaker: "Kak Daniel Saputra",
-                location: "Ruang TUREM Lt. 1, GKII",
-                docLink: "https://drive.google.com",
+                time: "08.30 WIB - Selesai",
+                speaker: "GI. Selfiana",
+                location: "Ruang Persekutuan Lt. 2, GKII",
+                docLink: "#dokumentasi",
                 poster: ""
             },
             curKorem: {
-                title: "Terang di Tengah Generasi",
-                verse: "Matius 5:14-16",
-                desc: "Komisi Remaja (KOREM) dipanggil menghadirkan dampak positif di sekolah, kampus, dan lingkungan pergaulan.",
+                title: "Rest, Recharge, Restore",
+                verse: "Matius 11:28",
                 date: "Minggu, 22 November 2026",
-                time: "10.30 WIB - Selesai",
-                speaker: "Ev. Yohanes Wijaya",
-                location: "Ruang KOREM Lt. 2, GKII",
-                docLink: "https://drive.google.com",
+                time: "10.00 WIB - Selesai",
+                speaker: "Sdr. Hendra (SMC)",
+                location: "Ruang Persekutuan Lt. 2, GKII",
+                docLink: "#dokumentasi",
                 poster: ""
             },
             nextMode: "split", // "split" (TUREM & KOREM) atau "combined" (1 tema gabungan)
             nextCombined: {
                 title: "",
                 verse: "",
-                desc: "",
                 date: "",
                 time: "",
                 speaker: "",
@@ -868,7 +843,6 @@
             nextTurem: {
                 title: "",
                 verse: "",
-                desc: "",
                 date: "",
                 time: "",
                 speaker: "",
@@ -878,7 +852,6 @@
             nextKorem: {
                 title: "",
                 verse: "",
-                desc: "",
                 date: "",
                 time: "",
                 speaker: "",
@@ -931,17 +904,17 @@
             docs: [
                 {
                     id: "d1",
-                    theme: "TUREM - Bertumbuh dalam Kebenaran",
+                    theme: "TUREM - Available to Serve",
                     date: "22 Nov 2026",
-                    verse: "1 Timotius 4:12",
+                    verse: "Lukas 17:7-10",
                     platform: "Google Drive",
                     url: "https://drive.google.com"
                 },
                 {
                     id: "d2",
-                    theme: "KOREM - Terang di Tengah Generasi",
+                    theme: "KOREM - Rest, Recharge, Restore",
                     date: "22 Nov 2026",
-                    verse: "Matius 5:14-16",
+                    verse: "Matius 11:28",
                     platform: "YouTube",
                     url: "https://youtube.com"
                 },
@@ -1065,12 +1038,10 @@
             }
         }
 
-        // Kartu Tema Minggu Ini (Tema Gelap)
         function buildCurrentThemeCardHTML(themeObj, options) {
             const { badgeText, badgeStyle, isCombined } = options;
             const title = themeObj.title || "Tema Ibadah";
             const verse = themeObj.verse || "";
-            const desc = themeObj.desc || "";
             const date = themeObj.date || "-";
             const time = themeObj.time || "-";
             const speaker = themeObj.speaker || "-";
@@ -1105,10 +1076,6 @@
                                 ? `<p class="font-display font-bold text-amber-300 text-sm sm:text-base mt-1.5">
                                        <i class="fa-solid fa-book-bible mr-1.5"></i>${verse}
                                    </p>`
-                                : ''
-                            }
-                            ${desc
-                                ? `<p class="text-slate-300 text-sm mt-3 leading-relaxed">${desc}</p>`
                                 : ''
                             }
                         </div>
@@ -1174,15 +1141,11 @@
             }
         }
 
-        // Kartu Tema Minggu Depan (Mendukung Coming Soon per Divisi atau Gabungan)
         function buildNextThemeCardHTML(themeObj, options) {
             const { badgeText, badgeStyle, isCombined } = options;
             const comingSoon = isThemeTitleEmpty(themeObj);
             const title = comingSoon ? "Coming Soon" : themeObj.title;
             const verse = (themeObj.verse || "").trim();
-            const desc = (themeObj.desc || "").trim() || (comingSoon
-                ? "Tema ibadah untuk minggu depan sedang dipersiapkan oleh tim pelayanan. Nantikan informasi terbarunya!"
-                : "");
             const date = (themeObj.date || "").trim();
             const time = (themeObj.time || "").trim();
             const speaker = (themeObj.speaker || "").trim();
@@ -1227,10 +1190,6 @@
                                 ? `<p class="font-display font-bold text-indigo-700 text-sm mt-1">
                                        <i class="fa-solid fa-book-bible mr-1.5"></i>${verse}
                                    </p>`
-                                : ''
-                            }
-                            ${desc
-                                ? `<p class="text-slate-600 text-sm mt-2.5 leading-relaxed">${desc}</p>`
                                 : ''
                             }
                         </div>
@@ -1542,14 +1501,12 @@
             if (locEl) locEl.value = t.location || "";
             const docEl = document.getElementById(`${prefix}-doclink`);
             if (docEl) docEl.value = t.docLink || "";
-            document.getElementById(`${prefix}-desc`).value = t.desc || "";
 
             pendingPosters[posterKey] = t.poster || "";
             updatePosterPreviewUI(posterKey, pendingPosters[posterKey]);
         }
 
         function launchAdminDashboard() {
-            // Minggu Ini
             const curMode = appData.curMode || "split";
             document.getElementById('input-cur-mode').value = curMode;
             toggleAdminThemeModeUI('cur');
@@ -1557,7 +1514,6 @@
             populateThemeForm('input-cur-turem', appData.curTurem, 'curTurem');
             populateThemeForm('input-cur-korem', appData.curKorem, 'curKorem');
 
-            // Minggu Depan
             const nextMode = appData.nextMode || "split";
             document.getElementById('input-next-mode').value = nextMode;
             toggleAdminThemeModeUI('next');
@@ -1599,7 +1555,7 @@
             const prefix = prefixMap[posterKey];
             if (!prefix) return;
 
-            ['title', 'verse', 'date', 'time', 'speaker', 'loc', 'desc'].forEach(field => {
+            ['title', 'verse', 'date', 'time', 'speaker', 'loc'].forEach(field => {
                 const el = document.getElementById(`${prefix}-${field}`);
                 if (el) el.value = "";
             });
@@ -1650,12 +1606,10 @@
                 speaker: document.getElementById(`${prefix}-speaker`).value.trim(),
                 location: document.getElementById(`${prefix}-loc`)?.value.trim() || "",
                 docLink: document.getElementById(`${prefix}-doclink`)?.value.trim() || "#dokumentasi",
-                desc: document.getElementById(`${prefix}-desc`).value.trim(),
                 poster: pendingPosters[posterKey] || ""
             };
         }
 
-        // Simpan Tema Minggu Ini
         window.saveCurrentThemes = async function(e) {
             e.preventDefault();
             if (!isAdminAuthenticated) return;
@@ -1669,7 +1623,6 @@
             await saveDataToCloud();
         };
 
-        // Simpan Tema Minggu Depan
         window.saveNextThemes = async function(e) {
             e.preventDefault();
             if (!isAdminAuthenticated) return;
@@ -1683,7 +1636,6 @@
             await saveDataToCloud();
         };
 
-        // Kelola Warta
         window.addWarta = async function(e) {
             e.preventDefault();
             if (!isAdminAuthenticated) return;
@@ -1710,7 +1662,6 @@
             await saveDataToCloud();
         };
 
-        // Kelola Event
         window.addEvent = async function(e) {
             e.preventDefault();
             if (!isAdminAuthenticated) return;
@@ -1740,7 +1691,6 @@
             await saveDataToCloud();
         };
 
-        // Kelola Arsip Dokumentasi
         window.addDocArchive = async function(e) {
             e.preventDefault();
             if (!isAdminAuthenticated) return;
